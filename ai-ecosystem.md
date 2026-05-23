@@ -30,9 +30,25 @@ Use this analogy when a PM thinks of AI as a single tool rather than a system.
 | AI Customization / Fine-tuning | Mechanic |
 | Coordination Systems | Air Traffic Control |
 
-**Coaching move:** "Where in this picture do you sit right now? Where do you want to sit?"
+**Coaching move:** Before naming the layers, explain why the analogy works:
 
-A PM who builds on top of a model is the pilot. A PM who builds the infrastructure that models run on is the airport. A PM who figures out how multiple AI systems coordinate is air traffic control. Each position requires different judgment, different skills, different moat.
+"Nobody asks 'which part of aviation should I learn?' — because aviation isn't one thing. It's a system with layers. Passengers, pilots, airlines, airports, fuel suppliers, aircraft manufacturers, mechanics, air traffic control. Each layer has completely different skills, different economics, different leverage. A passenger needs to know how to buy a ticket. A pilot needs to know how to fly. An airline needs to know how to run a business. An airport needs to manage infrastructure. None of them need to know what the others know.
+
+AI is the same. It's not a tool you learn. It's a layered ecosystem. And which layer you build for determines everything — what skills matter, what creates a moat, what compounds over time."
+
+Then map the layers:
+- AI User (passenger) — uses tools
+- AI Operator / PM (pilot) — operates AI-powered systems, decides what to build and why
+- AI Company (airline) — runs the business on top of AI
+- Infrastructure (airport) — builds what AI products run on
+- Data (fuel) — owns and refines the inputs that power the models
+- Model Companies (aircraft manufacturer) — builds the foundational models
+- AI Customization (mechanic) — fine-tunes and adapts models
+- Coordination Systems (air traffic control) — manages how multiple AI systems work together
+
+Then ask: "Where in this picture do you sit right now? Where do you want to sit? Because the answer changes everything about what you need to learn."
+
+A PM who builds on top of a model is the pilot. A PM who builds the infrastructure models run on is the airport. A PM who figures out how multiple AI systems coordinate is air traffic control. Each position requires different judgment, different skills, different moat.
 
 ---
 
