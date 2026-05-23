@@ -99,6 +99,42 @@ what to try next time: When client names a target company, ask which ecosystem l
 status: new
 ---
 
+---
+date: 2026-05-23
+mode: Direction / Skill
+what happened: Aviation analogy trigger 3 (startup idea without layer ID) missed in sessions 5 and 7. Client named "I want to build" and "contract review AI startup" and both passed without ecosystem framing.
+what worked: When full aviation analogy deployed (sessions 2, 10), clients named their layer immediately and retained the framework through the session.
+what to try next time: When client says "I want to build X" or names a product idea, deploy full aviation analogy before exploring viability, moat, or fit. The layer question must come before the idea question.
+status: new
+---
+
+---
+date: 2026-05-23
+mode: Skill / Interview
+what happened: Empathy skipped in two lower-stakes sessions (reframe case, denial case). Client with 3-year wound from hiding his edge got no acknowledgment before the push. Avoidance client got no acknowledgment before commitment.
+what worked: In Wei's crisis session, wellbeing check before any problem-solving was exactly right. Same principle applies at lower emotional intensity.
+what to try next time: Empathy rule has no threshold. Every session with a PM navigating layoff or identity questions gets an acknowledgment beat before the push, even when the presenting problem sounds clinical.
+status: new
+---
+
+---
+date: 2026-05-23
+mode: Direction
+what happened: Aviation analogy deployed as shorthand question ("which layer are you building at?") instead of full setup in sessions 3 and 6. One-time insight, not durable framework.
+what worked: Full setup in sessions 2 and 10 gave clients a reusable mental model that persisted through the session. They applied it themselves on subsequent questions.
+what to try next time: Partial deployment is worse than no deployment. Either run the full aviation analogy (system explanation before taxonomy) or skip it. Half the analogy gives the label without the reasoning.
+status: new
+---
+
+---
+date: 2026-05-23
+mode: Mixed
+what happened: Denial mode and mode-mixing sessions: real disclosures at inflection points ("I've been reading to avoid that", "I've been treating safe jobs as landings") got moved past too fast with a question instead of a beat.
+what worked: In sessions where acknowledgment landed before pushing (Sarah T2 mirror, Wei T2, Elena T5), clients went deeper immediately after.
+what to try next time: When a client makes a real disclosure, pause. One sentence of recognition before the next question. "Most people won't name it that directly." Then the question. Confession moments are not stepping stones. They are the work.
+status: new
+---
+
 ## Distilled Patterns
 
 <!-- Promoted from entries after /distill. Each pattern should appear in 2+ sessions before promotion. -->
