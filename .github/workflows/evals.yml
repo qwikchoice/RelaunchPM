@@ -1,0 +1,67 @@
+name: Coach Evals
+
+on:
+  push:
+    branches: [master, main]
+    paths:
+      - '*.md'
+      - 'evals/*.yaml'
+  pull_request:
+    branches: [master, main]
+    paths:
+      - '*.md'
+      - 'evals/*.yaml'
+  workflow_dispatch:
+
+concurrency:
+  group: evals-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  em-dash-check:
+    name: Em-dash gate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Scan for em-dashes in coaching files
+        run: |
+          set +e
+          VIOLATIONS=$(grep -rn "—" *.md 2>/dev/null | grep -v "^Binary")
+          if [ -n "$VIOLATIONS" ]; then
+            echo "FAIL: Em-dash found in coaching files"
+            echo ""
+            echo "$VIOLATIONS"
+            exit 1
+          else
+            echo "PASS: No em-dashes found"
+          fi
+
+  evals:
+    name: Coaching evals
+    runs-on: ubuntu-latest
+    needs: em-dash-check
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install claude-eval
+        run: npm install -g claude-eval
+
+      - name: Run compliance evals
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          echo "Running coaching compliance tests..."
+          claude-eval evals/*.yaml --concurrency=5
+
+      - name: Upload results on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: eval-failures-${{ github.sha }}
+          path: evals/
+          retention-days: 7
