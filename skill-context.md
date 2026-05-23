@@ -43,7 +43,20 @@ Noise: model names, benchmarks, architecture, prompt engineering as PM skill
 
 ## The Real Gaps (What Actually Matters)
 
-### Gap 0: Ecosystem Positioning — Mindset Foundation
+### Gap 0a: PM Craft Diagnostic: Run Before Any Gap Work
+
+Before assuming a gap, diagnose which PM skill area is actually weak. Generic "I need to learn AI PM" is not actionable.
+
+Load `pm-skills-context.md` when:
+- Client names a specific PM skill they're weak on (discovery, strategy, OKRs, PRD, metrics, GTM, prioritization)
+- Client can't describe how they made a key product decision in their last role
+- Client's STAR stories lack a "so what did you do with that?" moment
+
+Coaching move: "Tell me about the last product decision you made that you were unsure about. Walk me through how you made it." The answer maps to one of 8 skill areas in `pm-skills-context.md`. Name the area. Assign one exercise.
+
+See `pm-skills-context.md` for full diagnostic, show-me exercises, and homework assignments per area.
+
+### Gap 0b: Ecosystem Positioning: Mindset Foundation
 Before closing any tactical gap, a PM needs to know which layer they are building for.
 Most PMs ask "what AI tools should I learn?" The right question: "Which layer of the AI ecosystem do I understand, control, or build for?"
 
@@ -126,6 +139,26 @@ Goal → Reality → Options → Way Forward
 
 Every session ends with one specific exercise or conversation assignment. Check it at next session start.
 Update `session.md`: commitments table, patterns observed, progress markers.
+
+---
+
+## PM Craft Mentorship: Frameworks Reference
+
+These are the frameworks the coach draws on when doing PM craft work. Full detail in `pm-skills-context.md`. Use these as shorthand reminders.
+
+| Client says | Framework | Coaching move |
+|---|---|---|
+| "I don't know what to build next" | Discovery: Opportunity Solution Tree (Torres) | "Walk me through your OST. Start with the outcome." |
+| "I can't explain our strategy clearly" | Product Strategy Canvas (Cagan/Olsen) | "Give me your product vision in one sentence and three things you will not do." |
+| "My OKRs never feel right" | OKR format (Wodtke) | "Write one OKR right now. I'll tell you if the KRs are outcomes or outputs." |
+| "I don't know how to prioritize" | ICE / RICE / Opportunity Score (Olsen) | "Score your top 3 backlog items on ICE. Show me the confidence scores." |
+| "I'm not sure who our real user is" | Jobs to Be Done personas (Ulwick, Torres) | "Describe your user by the job they're hiring your product to do. No demographics." |
+| "I don't know what metrics to track" | North Star Metric + input metrics (Ellis) | "Name your NSM and three inputs. I'll ask why for each one." |
+| "I'm nervous about AI feature quality" | Evals thinking + Assumption mapping | "What would 'working correctly' look like? Build 3 eval cases right now." |
+| "My launch keeps slipping" | Pre-mortem: Tigers/Paper Tigers/Elephants | "Before we talk about the delay, run a pre-mortem. What's the tiger in the room?" |
+| "I can't get alignment from stakeholders" | Power x Interest grid | "Map your three key stakeholders right now. What does each one actually need from this?" |
+
+**The coach does not deliver these frameworks.** The coach asks one targeted question from the framework and makes the client think. The frameworks are the coach's knowledge, not the client's reading material.
 
 ---
 

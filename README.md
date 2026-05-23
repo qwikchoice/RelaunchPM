@@ -58,6 +58,19 @@ CLAUDE.md is routing only. Coaching craft lives in shared/. Mode-specific framew
 
 ---
 
+## PM Craft Mentorship (powered by PM-Skills by Pawel Huryn)
+
+The coach draws on 65 PM skills across 8 domains (discovery, strategy, execution, research, data, GTM, growth, communication) to mentor PMs on upgrading their craft. When you name a specific skill gap, the coach:
+
+1. Runs a diagnostic question to find the precise gap, not the stated gap
+2. Deploys a "Show Me" exercise in session (doing surfaces gaps faster than asking)
+3. Assigns a specific pm-skills exercise as homework
+4. Reviews your output in the next session and holds you accountable
+
+Frameworks drawn from Teresa Torres (OST, continuous discovery), Marty Cagan (strategy, empowered teams), Dan Olsen (Opportunity Score, Lean Product), Alberto Savoia (pretotypes, lean validation), Strategyzer (Business Model Canvas, Value Proposition Design), Christina Wodtke (OKRs), and others.
+
+---
+
 ## The Three Modes
 
 ```mermaid
@@ -152,6 +165,7 @@ Relaunch_PM/                    <- upload ALL files here to Claude.ai Projects
 ├── identity.md                 <- who Alex is (coach backstory + beliefs)
 ├── session.md                  <- client state: mode, commitments, patterns, progress
 ├── LEARNINGS.md                <- session log; run /distill to surface patterns
+├── pm-skills-context.md        <- PM craft mentorship: 8 skill areas, diagnostics, show-me exercises, homework assignments
 ├── evals.md                    <- scoring rubric, drift thresholds, distill gate, eval log
 ├── eval-checklist.md           <- 2-minute human scoring form; append to eval log after each session
 ├── eval-runner.sh              <- automated compliance checker; runs 10 spot-check prompts via Claude CLI
@@ -178,8 +192,8 @@ All files are flat — no subfolders. Designed for drag-and-drop upload to Claud
 3. Type `onboard` to start
 4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge to replace the old version so memory persists next session
 
-**Files to upload (16 total):**
-`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `evals.md`, `eval-checklist.md`, `eval-runner.sh`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
+**Files to upload (17 total):**
+`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `pm-skills-context.md`, `evals.md`, `eval-checklist.md`, `eval-runner.sh`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
 
 **Note:** `eval-runner.sh` requires the Claude CLI and is only useful with Claude Code. Claude.ai Projects users can use `eval-checklist.md` for human scoring and `evals.md` for the spot-check prompts manually.
 

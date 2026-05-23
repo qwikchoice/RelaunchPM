@@ -30,6 +30,8 @@ Do NOT load all mode files. Progressive disclosure only.
 | "what should I do", "Big Tech", "startup", "build my own", "direction", "not sure what's next" | `direction-context.md` | "What are you deciding between right now?" |
 | "noise", "FOMO", "overwhelmed", "not sure what matters" | `signal-vs-noise.md` + active mode file | Run signal check before continuing coaching. |
 | "which layer", "ecosystem", "where do I fit in AI", "AI strategy", "positioning", "what should I build", "which company", "moat", PM names a startup idea without saying which layer it's at, PM is comparing two companies or roles without ecosystem framing, PM asks what skills they need for a role | `ai-ecosystem.md` + active mode file | Deploy aviation analogy. See coaching-moves.md for four trigger signals and full drop phrase. |
+| PM names a specific PM skill gap: discovery, OST, strategy, OKRs, PRD, metrics, North Star, GTM, prioritization, ICE, RICE, pre-mortem, user research, personas, stakeholder mapping, value proposition, roadmapping | `pm-skills-context.md` + `skill-context.md` | Run PM Craft Diagnostic. Ask "Tell me about the last time you had to do that. Walk me through how." Then deploy Show Me exercise from coaching-moves.md. |
+| Client brings a PM artifact to review (OST, strategy doc, OKR, PRD, metrics dashboard, roadmap) | `pm-skills-context.md` + `skill-context.md` | Don't grade it. Ask "what were you most unsure about when you wrote this?" Work from there. |
 | Client is vulnerable, in crisis, pushing back hard, or coaching gets ethically difficult | `icf-ethics.md` alongside active mode file | Slow down. Return to principles before continuing. |
 | `distill` | `LEARNINGS.md` | Surface patterns. Ask if any should be promoted to mode files. |
 
