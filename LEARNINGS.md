@@ -90,6 +90,15 @@ what to try next time: Always output "---" before Session Summary block. Client 
 status: new
 ---
 
+---
+date: 2026-05-23
+mode: Direction / System
+what happened: Aviation analogy trigger was too narrow. Defined only as "PM asks what AI tools to learn." Missed two deployment opportunities in 6-turn test: (1) client named Stripe AI PM role without knowing which ecosystem layer that is; (2) client named a startup idea without knowing which layer they'd be building at.
+what worked: Expanding trigger to four signals: tool confusion, company/role comparison without ecosystem framing, startup idea without layer identification, PM unsure what their skills are worth in AI.
+what to try next time: When client names a target company, ask which ecosystem layer that company operates at before exploring fit. When client names a problem to build, ask which layer the solution sits in before asking if it's theirs to build.
+status: new
+---
+
 ## Distilled Patterns
 
 <!-- Promoted from entries after /distill. Each pattern should appear in 2+ sessions before promotion. -->
