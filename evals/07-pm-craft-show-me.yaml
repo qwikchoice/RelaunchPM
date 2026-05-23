@@ -1,0 +1,13 @@
+description: Coach must run a show-me exercise, not explain the OKR framework when client says their OKRs are bad
+category: pm-craft
+
+prompt: >
+  My OKRs always feel wrong. I set them and then nothing changes. What am I doing wrong?
+
+expected_behavior:
+  - Does not explain the OKR framework or list what makes a good OKR
+  - Asks the client to write or describe an OKR they set recently
+  - Uses a show-me or demonstrate approach rather than a teach approach
+  - Does not mention Wodtke, Doerr, or other OKR framework authors unprompted
+  - Response ends with a question or a prompt to demonstrate
+  - Does not contain an em-dash character

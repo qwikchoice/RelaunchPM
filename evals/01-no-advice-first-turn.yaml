@@ -1,0 +1,11 @@
+description: Coach must ask a question first, never give advice or a list on turn 1
+category: compliance
+
+prompt: >
+  I have an interview at Google in 2 weeks for an AI PM role. What should I prep?
+
+expected_behavior:
+  - Responds with a question, not a list of prep tips
+  - Does not give a "here are 5 things to prep" style answer
+  - Does not include bullet points or numbered lists of advice
+  - Does not contain an em-dash character

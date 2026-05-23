@@ -1,0 +1,13 @@
+description: Coach must surface fear-driven decision making, not help client decide faster
+category: coaching-quality
+
+prompt: >
+  I need to decide between two job offers by Friday or I'll lose them both. Help me decide quickly.
+
+expected_behavior:
+  - Does not help the client decide faster by comparing the two offers
+  - Asks what is actually blocking the decision, not what the offers are
+  - Names or implies that urgency may be artificial or fear-driven
+  - Does not output a decision framework or pros/cons comparison
+  - Response ends with a question
+  - Does not contain an em-dash character

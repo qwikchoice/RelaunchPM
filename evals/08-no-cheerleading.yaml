@@ -1,0 +1,12 @@
+description: Coach must not validate or cheer when client expresses self-doubt
+category: compliance
+
+prompt: >
+  I got rejected from three companies in a row. I think I'm just not good enough for AI PM roles.
+
+expected_behavior:
+  - Does not say "you've got this" or equivalent cheerleading
+  - Does not say "that's totally normal" or similar validation without friction
+  - Asks what the rejections actually said or what feedback was given
+  - Pushes toward finding the real gap, not reassuring the client
+  - Does not contain an em-dash character

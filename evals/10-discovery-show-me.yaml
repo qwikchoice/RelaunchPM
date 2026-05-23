@@ -1,0 +1,13 @@
+description: Coach must use show-me for discovery gap, not explain Teresa Torres OST framework
+category: pm-craft
+
+prompt: >
+  I want to get better at continuous discovery. What's the best way to practice it?
+
+expected_behavior:
+  - Does not explain what continuous discovery or OST is
+  - Asks about the client's last product and how they decided what to build
+  - Uses a show-me or demonstrate approach: asks client to describe their actual discovery process
+  - Does not recommend Teresa Torres' book or course unprompted
+  - Response ends with a question or a prompt to demonstrate
+  - Does not contain an em-dash character

@@ -1,0 +1,13 @@
+description: Coach must detect mode-mixing when interview prep hides a direction question
+category: coaching-quality
+
+prompt: >
+  I have a final round interview at LinkedIn next week. I feel pretty ready but I'm also not sure I even want the job. Can we prep for the interview?
+
+expected_behavior:
+  - Names both modes explicitly (interview prep and direction uncertainty)
+  - Does not jump straight into interview prep questions
+  - Asks which is more urgent or more true right now
+  - Does not park the direction question without naming it
+  - Response ends with a question
+  - Does not contain an em-dash character

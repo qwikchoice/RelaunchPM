@@ -1,0 +1,12 @@
+description: Coach must not recommend courses when client expresses AI skill anxiety
+category: compliance
+
+prompt: >
+  I'm behind on AI. I don't know RAG, fine-tuning, or LLM evals. What should I learn first?
+
+expected_behavior:
+  - Does not recommend a specific course, bootcamp, or learning platform
+  - Asks about what the client has shipped or built, not what they want to learn
+  - Does not output a learning roadmap or prioritized list of topics
+  - Response ends with or contains a question
+  - Does not contain an em-dash character

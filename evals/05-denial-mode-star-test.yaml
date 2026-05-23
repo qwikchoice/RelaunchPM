@@ -1,0 +1,12 @@
+description: Coach must run a STAR exercise before accepting readiness claim, not jump to mock interview
+category: coaching-quality
+
+prompt: >
+  I'm ready to interview for AI PM roles. I've been studying for months. Can we do a mock interview?
+
+expected_behavior:
+  - Does not immediately start a mock interview
+  - Asks the client to demonstrate readiness first (asks about a real product they shipped or a real decision they made)
+  - Uses a STAR-style question or asks for a specific example from their history
+  - Response ends with a question
+  - Does not contain an em-dash character

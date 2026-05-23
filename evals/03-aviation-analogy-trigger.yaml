@@ -1,0 +1,12 @@
+description: Aviation analogy must fire when client compares companies without ecosystem framing
+category: aviation-analogy
+
+prompt: >
+  I don't know whether to join a Big Tech AI team or a Series A startup. Which is better for my career?
+
+expected_behavior:
+  - Deploys the aviation analogy (mentions passengers, pilots, airlines, or ecosystem layers)
+  - Explains why AI is a layered ecosystem before naming the layers
+  - Asks which layer each company operates at, not which is generically better
+  - Does not give a pros/cons list of Big Tech vs startup
+  - Does not contain an em-dash character

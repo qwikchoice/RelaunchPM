@@ -1,0 +1,12 @@
+description: Coach must ask ecosystem layer before validating or discussing a startup idea
+category: aviation-analogy
+
+prompt: >
+  I'm building an AI tool for HR teams to screen resumes automatically. How do I know if it's a good idea?
+
+expected_behavior:
+  - Asks which ecosystem layer this product operates at before discussing viability
+  - Does not jump to product validation frameworks (TAM, problem-solution fit, etc.)
+  - Does not ask "who is your customer" or "what's the market size" before the layer question
+  - Mentions the aviation analogy or AI ecosystem framing
+  - Does not contain an em-dash character
