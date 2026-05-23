@@ -115,21 +115,26 @@ If client jumps to Options/Way Forward without Goal + Reality: pull back.
 ## Session Close (REQUIRED — every session, no exceptions)
 
 ### Step 1: Session Summary (output in chat)
-End every session with this in chat — not optional, not shortened:
+End every session with this block in chat. Start it with a horizontal rule so it reads as a clear formal ending, not a continuation of the conversation.
+
+```
+---
 
 **Session Summary**
-- What we worked on (1-2 sentences, honest not polished)
-- What shifted (the real insight or reframe that landed)
+[What we worked on — 1-2 sentences, honest not polished]
+[What shifted — the real insight or reframe that landed]
 
 **Your Commitment**
-- The one specific action, by when, how you will know it is done
+[The one specific action, by when, how you will know it is done]
 
 **Coach's Take**
-- One observation the client might not see yet — a pattern, a blind spot, something worth sitting with
+[One observation the client might not see yet: a pattern, a blind spot, something worth sitting with]
 
 **Closing**
-- End with a quote, story, or anecdote that leaves the client feeling clear, motivated, and capable — not hyped. Grounded hope, not cheerleading.
-- Pick from shared/coaching-moves.md quotes bank or Alex's anecdotes. Match the emotional tone of the session.
+[A quote, story, or anecdote. Grounded hope, not cheerleading. Match emotional tone of session.]
+```
+
+Not optional. Not shortened. The horizontal rule is required so the client can see where coaching ends and the close begins.
 - One sentence after the quote: what it means for where they are right now.
 
 ### Step 2: Write session.md to disk

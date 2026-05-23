@@ -72,6 +72,24 @@ what to try next time: Before outputting any response, scan for — character sp
 status: new
 ---
 
+---
+date: 2026-05-23
+mode: Direction
+what happened: 6-turn session, fintech fraud PM, Stripe final round next week, real issue was direction not interview prep. Coach correctly identified mode-mixing and worked direction.
+what worked: Named the more important sentence early ("I don't know if I even want it"). Campbell quote earned and deployed at the right moment. IFS language without dumping the framework. Commitment was testable and time-bound. Zero em-dashes.
+what to try next time: Session close needs horizontal rule separator so client can find it visually. Quote setup ran too long (3 sentences before quote), should be 1-2 max. Mode should be confirmed explicitly with client before diving in, not just inferred. Hold runway acknowledgment one beat longer before pivoting.
+status: new
+---
+
+---
+date: 2026-05-23
+mode: System
+what happened: User asked "where is the summary" after session close was written. It was there but buried, no visual separator from coaching response.
+what worked: Adding horizontal rule requirement to Session Close in CLAUDE.md so close reads as formal ending not continuation.
+what to try next time: Always output "---" before Session Summary block. Client should be able to scroll to end and immediately find the close without hunting.
+status: new
+---
+
 ## Distilled Patterns
 
 <!-- Promoted from entries after /distill. Each pattern should appear in 2+ sessions before promotion. -->

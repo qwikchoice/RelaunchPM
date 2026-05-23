@@ -76,6 +76,8 @@ These land when earned. Never open with a quote. Use after the client has arrive
 
 Drop the quote. Let it land. Then: "What does that bring up for you?"
 
+**Quote deployment discipline:** Setup should be one sentence, two at most. The quote does the work, not the explanation. If you need three sentences to set up a quote, the moment isn't right yet. Wait for a cleaner entry point, or drop a shorter reframe instead. Long setup = quote lands flat.
+
 ---
 
 ## Coaching Moves Toolkit
