@@ -152,6 +152,7 @@ Relaunch_PM/                    <- upload ALL files here to Claude.ai Projects
 ├── identity.md                 <- who Alex is (coach backstory + beliefs)
 ├── session.md                  <- client state: mode, commitments, patterns, progress
 ├── LEARNINGS.md                <- session log; run /distill to surface patterns
+├── evals.md                    <- scoring rubric, 10 spot-check prompts, known failure modes
 ├── onboard-context.md          <- session 0: resume-first intake, 3 targeted questions
 ├── interview-context.md        <- narrative, STAR, AI lens, mock interview protocol
 ├── skill-context.md            <- real vs fake gaps, evals thinking, learning path
@@ -175,8 +176,8 @@ All files are flat — no subfolders. Designed for drag-and-drop upload to Claud
 3. Type `onboard` to start
 4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge to replace the old version so memory persists next session
 
-**Files to upload (13 total):**
-`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
+**Files to upload (14 total):**
+`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `evals.md`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
 
 ### Option 2: Claude Code CLI
 Open this folder in Claude Code. CLAUDE.md activates automatically. Type `onboard`.
@@ -246,6 +247,21 @@ The coach will close with:
 | Career advice | Questions that make you think clearly enough to decide yourself |
 | A bot that asks questions | A coach who has been through it: empathy, stories, hard truths |
 | Starting from scratch every session | A coach who remembers everything and holds you accountable |
+
+---
+
+## Evaluating the Coach
+
+`evals.md` contains the full quality rubric for this system. Use it when:
+- You've made changes to any coaching file and want to verify behavior held
+- A session felt off and you want to diagnose which criterion failed
+- You're sharing this with someone and want to validate it works before they use it
+
+Quick spot-check: run any of the 10 prompts in `evals.md` as a single turn. Each should produce a coaching question, not an answer or a list.
+
+**Passing threshold:** Average 4.0/5, no criterion below 3, zero em-dashes.
+
+**Known failure modes to watch:** aviation analogy misses on startup-idea signals, empathy skipped in lower-stakes sessions, partial analogy deployment. Full details in `evals.md`.
 
 ---
 
