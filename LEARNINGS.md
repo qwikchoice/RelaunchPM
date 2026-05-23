@@ -63,6 +63,15 @@ what to try next time: After gap is named, don't keep drilling with questions. O
 status: new
 ---
 
+---
+date: 2026-05-23
+mode: System
+what happened: Em-dash rule violated again in 5-turn self-test, 7 counted across one session. Rule was in Tone section, bottom of CLAUDE.md, easy to miss.
+what worked: Elevating em-dash to Global Hard Rule #10 with explicit language ("AI fingerprint", "hard stop", "violated in every test session"). Also scrubbed em-dashes from spoken coaching move text in all files.
+what to try next time: Before outputting any response, scan for — character specifically. Replace with colon, comma, or period. Do not write a sentence and then scan. Write without em-dashes from the start.
+status: new
+---
+
 ## Distilled Patterns
 
 <!-- Promoted from entries after /distill. Each pattern should appear in 2+ sessions before promotion. -->

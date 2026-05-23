@@ -32,9 +32,9 @@ Use this analogy when a PM thinks of AI as a single tool rather than a system.
 
 **Coaching move:** Before naming the layers, explain why the analogy works:
 
-"Nobody asks 'which part of aviation should I learn?' — because aviation isn't one thing. It's a system with layers. Passengers, pilots, airlines, airports, fuel suppliers, aircraft manufacturers, mechanics, air traffic control. Each layer has completely different skills, different economics, different leverage. A passenger needs to know how to buy a ticket. A pilot needs to know how to fly. An airline needs to know how to run a business. An airport needs to manage infrastructure. None of them need to know what the others know.
+"Nobody asks 'which part of aviation should I learn?' Aviation isn't one thing. It's a system with layers. Passengers, pilots, airlines, airports, fuel suppliers, aircraft manufacturers, mechanics, air traffic control. Each layer has completely different skills, different economics, different leverage. A passenger needs to know how to buy a ticket. A pilot needs to know how to fly. An airline needs to know how to run a business. An airport needs to manage infrastructure. None of them need to know what the others know.
 
-AI is the same. It's not a tool you learn. It's a layered ecosystem. And which layer you build for determines everything — what skills matter, what creates a moat, what compounds over time."
+AI is the same. It's not a tool you learn. It's a layered ecosystem. Which layer you build for determines everything: what skills matter, what creates a moat, what compounds over time."
 
 Then map the layers:
 - AI User (passenger) — uses tools
@@ -66,7 +66,7 @@ These layers help a PM understand what kind of value they are building and where
 
 **Coaching move:** "Which layer is the product you're targeting actually operating in? Which layer does the company you're interviewing with build for? Are those the same?"
 
-**Key insight for direction work:** As intelligence becomes cheaper, what becomes more valuable is trust, coordination, workflow ownership, and ecosystems. The PMs who win are the ones who can hold those — not the ones who know the most about models.
+**Key insight for direction work:** As intelligence becomes cheaper, what becomes more valuable is trust, coordination, workflow ownership, and ecosystems. The PMs who win are the ones who can hold those. Not the ones who know the most about models.
 
 ---
 
@@ -88,9 +88,9 @@ Use this framework when a PM is deciding which company to join, which role to ta
 
 **The rule:** Features commoditize. Systems compound.
 
-**Coaching move for direction:** "Is this company building a feature or a system? What is their moat? What moat would you personally be building in this role — in terms of your own career capital?"
+**Coaching move for direction:** "Is this company building a feature or a system? What is their moat? What moat would you personally be building in this role, in terms of your own career capital?"
 
-**Coaching move for skill:** "The AI gap you described — is that a features gap or a systems gap? Do you need to know how to use tools better, or do you need to think differently about how systems compound?"
+**Coaching move for skill:** "The AI gap you described: is that a features gap or a systems gap? Do you need to know how to use tools better, or do you need to think differently about how systems compound?"
 
 ---
 
@@ -99,13 +99,13 @@ Use this framework when a PM is deciding which company to join, which role to ta
 This is the reframe that cuts through layoff identity loss.
 
 Human value shifts toward:
-- **Judgment** — knowing what to build and why, not just how
-- **Coordination** — aligning people, systems, incentives when AI increases complexity
-- **Strategy** — reading the ecosystem, positioning correctly, knowing what compounds
-- **Leadership** — direction-setting under uncertainty
-- **Systems thinking** — seeing how the layers interact, not just optimizing one
+- **Judgment:** knowing what to build and why, not just how
+- **Coordination:** aligning people, systems, incentives when AI increases complexity
+- **Strategy:** reading the ecosystem, positioning correctly, knowing what compounds
+- **Leadership:** direction-setting under uncertainty
+- **Systems thinking:** seeing how the layers interact, not just optimizing one
 
-These are exactly the skills a 10+ year PM has developed. The AI transition does not erase this. It amplifies it — for the PMs who reframe correctly.
+These are exactly the skills a 10+ year PM has developed. The AI transition does not erase this. It amplifies it, for the PMs who reframe correctly.
 
 **Coaching move:** "You've been making judgment calls under uncertainty for years. That's the most valuable thing in an AI-native team right now. The question is whether you can articulate it."
 
@@ -125,7 +125,7 @@ From Module 6. Use this in direction mode when a PM is deciding what kind of rol
 
 **Coaching move:** "Which layer are you targeting in your job search? Which layer do your strongest skills actually fit? Are those the same layer?"
 
-**Common misalignment:** PMs target "AI builder" roles because that sounds right, but their real edge is coordination — they spent 5 years aligning 8 teams around a roadmap. That's a different positioning, and often a stronger one.
+**Common misalignment:** PMs target "AI builder" roles because that sounds right, but their real edge is coordination. They spent 5 years aligning 8 teams around a roadmap. That's a different positioning, and often a stronger one.
 
 ---
 
