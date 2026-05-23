@@ -152,7 +152,9 @@ Relaunch_PM/                    <- upload ALL files here to Claude.ai Projects
 ├── identity.md                 <- who Alex is (coach backstory + beliefs)
 ├── session.md                  <- client state: mode, commitments, patterns, progress
 ├── LEARNINGS.md                <- session log; run /distill to surface patterns
-├── evals.md                    <- scoring rubric, 10 spot-check prompts, known failure modes
+├── evals.md                    <- scoring rubric, drift thresholds, distill gate, eval log
+├── eval-checklist.md           <- 2-minute human scoring form; append to eval log after each session
+├── eval-runner.sh              <- automated compliance checker; runs 10 spot-check prompts via Claude CLI
 ├── onboard-context.md          <- session 0: resume-first intake, 3 targeted questions
 ├── interview-context.md        <- narrative, STAR, AI lens, mock interview protocol
 ├── skill-context.md            <- real vs fake gaps, evals thinking, learning path
@@ -176,8 +178,10 @@ All files are flat — no subfolders. Designed for drag-and-drop upload to Claud
 3. Type `onboard` to start
 4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge to replace the old version so memory persists next session
 
-**Files to upload (14 total):**
-`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `evals.md`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
+**Files to upload (16 total):**
+`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `evals.md`, `eval-checklist.md`, `eval-runner.sh`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
+
+**Note:** `eval-runner.sh` requires the Claude CLI and is only useful with Claude Code. Claude.ai Projects users can use `eval-checklist.md` for human scoring and `evals.md` for the spot-check prompts manually.
 
 ### Option 2: Claude Code CLI
 Open this folder in Claude Code. CLAUDE.md activates automatically. Type `onboard`.
@@ -260,6 +264,16 @@ The coach will close with:
 Quick spot-check: run any of the 10 prompts in `evals.md` as a single turn. Each should produce a coaching question, not an answer or a list.
 
 **Passing threshold:** Average 4.0/5, no criterion below 3, zero em-dashes.
+
+**Automated check (Claude Code):**
+```bash
+./eval-runner.sh          # full 10-prompt run
+./eval-runner.sh --quick  # 3-prompt smoke test after small edits
+```
+
+**Human scoring:** Fill in `eval-checklist.md` after every live session. Append row to eval log in `evals.md`.
+
+**Drift detection:** Any criterion below 3.5 rolling average over 5 sessions requires investigation. Em-dash in any commit is blocked by pre-commit hook.
 
 **Known failure modes to watch:** aviation analogy misses on startup-idea signals, empathy skipped in lower-stakes sessions, partial analogy deployment. Full details in `evals.md`.
 

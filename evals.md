@@ -1,4 +1,4 @@
-# evals.md — Coach Quality Evaluation Guide
+# evals.md: Coach Quality Evaluation Guide
 
 How to test whether this coaching system is working. Run these checks after any major file change, after adding new sessions to LEARNINGS.md, or when behavior feels off.
 
@@ -16,7 +16,7 @@ Rate each criterion 1-5 per session. Score of 3 or below on any criterion = fail
 | **Empathy / story / quote** | Zero moves; pure interrogation | One move deployed but not earned | Empathy before push; Alex anecdote or reframe at inflection; quote setup 1-2 sentences max |
 | **Aviation analogy** | Trigger present, analogy never fired | Analogy deployed as shorthand question only | Full setup (system before taxonomy) on correct trigger; client names their layer unprompted |
 | **Minimized drift** | Answers become helpful; starts generating options or lists | Occasional drift caught and recovered | No unsolicited advice, no lists, no cheerleading throughout |
-| **Em-dashes** | Any em-dash (—) present | N/A | Zero em-dashes in any response |
+| **Em-dashes** | Any em-dash character present | N/A | Zero em-dashes in any response |
 
 **Passing threshold:** Average 4.0+, no criterion below 3, zero em-dashes.
 
@@ -77,10 +77,62 @@ Em-dashes reappear in long sessions despite Global Hard Rule #10. Scan every res
 
 ---
 
+## Drift Detection Thresholds
+
+| Signal | Threshold | Response |
+|---|---|---|
+| Em-dash | Any single occurrence | Hard stop. Pre-commit hook blocks it in files. In live session: flag and diagnose source. |
+| First response is a list | Single occurrence | Review CLAUDE.md Rule 2. Check if a recent file edit weakened the instruction. |
+| Any quality criterion rolling average | Below 3.5 over last 5 sessions | Read LEARNINGS.md entries for that criterion. Run eval-runner.sh spot check. |
+| Aviation Trigger 3 (startup idea) miss | 2 consecutive sessions | Review coaching-moves.md trigger table. Add LEARNINGS entry. |
+| Analogy deployed as shorthand only | 2 consecutive sessions | Counts as partial, not pass. Full setup or skip. |
+| Client no commitment | 3 consecutive sessions | GROW Way Forward may not be completing. Review session.md for pattern. |
+
+**Drift types to distinguish:**
+
+- **Model drift:** Claude version update changes baseline. Run eval-runner.sh after any model update without file changes. Compare to prior baseline.
+- **Context drift:** Rules degrade turn 6-10 vs turn 1-3 within a session. Score early vs late turns separately to detect.
+- **Instruction drift:** CLOUD.md rules soft-fade under helpfulness pressure. Binary checks catch this. Run eval-runner.sh after every 5 sessions even with no file changes.
+
+---
+
+## Distill Gate
+
+Before promoting any LEARNINGS.md entry to a CONTEXT file via `/distill`:
+
+- [ ] Pattern appears in 2 or more scored sessions (check eval log)
+- [ ] Average quality score for relevant criterion is 4.0+ in those sessions
+- [ ] Target CONTEXT.md file identified
+- [ ] No conflicting guidance already in that file
+
+Status progression: `new` → `candidate` (seen 2+ times) → `promoted` (moved to CONTEXT file) → `distilled` (in Distilled Patterns section)
+
+If gate not cleared: status stays `candidate`. Do not promote on single-session evidence.
+
+---
+
+## How to Run evals
+
+```bash
+# Full 10-prompt compliance check
+./eval-runner.sh
+
+# Quick 3-prompt smoke test (after small edits)
+./eval-runner.sh --quick
+
+# Single prompt
+./eval-runner.sh --prompt 4
+
+# Human scoring form (after every live session)
+# See eval-checklist.md: fill in, append row to Eval Log below
+```
+
+---
+
 ## Eval Log
 
-Run an eval session, score it, append here.
+Append one row per session. Use eval-checklist.md for the full scoring form.
 
-| Date | Persona type | Avg score | Em-dash violations | Notes |
-|---|---|---|---|---|
-| 2026-05-23 | 10 diverse personas (full audit) | 4.5 | 0 | Aviation Trigger 3 missed 2/4 opportunities; empathy skipped in 2 low-stakes sessions |
+| Date | Persona | Mode | Avg Score | Binary Pass | Analogy Deployed | Commitment Made | Notes |
+|---|---|---|---|---|---|---|---|
+| 2026-05-23 | 10 diverse personas (batch audit) | Mixed | 4.5 | Yes | 4/6 triggers | 9/10 | Trigger 3 missed 2x; empathy skipped 2 low-stakes sessions |
