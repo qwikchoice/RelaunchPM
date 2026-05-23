@@ -156,6 +156,7 @@ Relaunch_PM/                    <- upload ALL files here to Claude.ai Projects
 ├── interview-context.md        <- narrative, STAR, AI lens, mock interview protocol
 ├── skill-context.md            <- real vs fake gaps, evals thinking, learning path
 ├── direction-context.md        <- IFS, ACT values, Bezos, 3-path reality check
+├── ai-ecosystem.md             <- aviation analogy, moats, career layers, 5 strategic questions
 ├── coaching-moves.md           <- empathy moves, Alex anecdotes, quotes bank, stories, reframes
 ├── study-mate.md               <- Layer 2: Memory + Diagnosis + Adaptation (Khosravi et al)
 ├── signal-vs-noise.md          <- what to learn vs ignore in the AI chaos
@@ -174,8 +175,8 @@ All files are flat — no subfolders. Designed for drag-and-drop upload to Claud
 3. Type `onboard` to start
 4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge to replace the old version so memory persists next session
 
-**Files to upload:**
-`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
+**Files to upload (13 total):**
+`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
 
 ### Option 2: Claude Code CLI
 Open this folder in Claude Code. CLAUDE.md activates automatically. Type `onboard`.
