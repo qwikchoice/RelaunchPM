@@ -182,6 +182,44 @@ Open this folder in Claude Code. CLAUDE.md activates automatically. Type `onboar
 
 ---
 
+## Starting a Session
+
+**First session ever:**
+Type: `onboard`
+Drop your resume or LinkedIn URL when asked. The coach reads it, delivers one real observation, then asks 3 questions. Done. Coaching starts immediately after.
+
+**Every session after that:**
+Just open the project and start talking. The coach reads `session.md` on load and opens with your last commitment. If you want to jump to a specific mode, type `start interview`, `start skill`, or `start direction`.
+
+---
+
+## Ending a Session
+
+When you are done, say: `end session` or just say you need to stop.
+
+The coach will close with:
+
+1. **Session Summary** — what you worked on, what shifted
+2. **Your Commitment** — the one specific action, by when, how you will know it is done
+3. **Coach's Take** — one observation you might not see yet
+4. **Closing** — a quote, story, or anecdote that leaves you grounded and clear
+
+---
+
+## What Happens After the Session Ends
+
+**The coach writes two files automatically:**
+
+`session.md` — updated with your profile, new commitments, patterns observed. Next session opens from exactly here.
+
+`LEARNINGS.md` — one entry added with what happened, what worked, what to try next time. Run `distill` after 3+ sessions to promote patterns into the coaching frameworks.
+
+**If you are using Claude.ai Projects:** copy the updated `session.md` the coach outputs in chat and replace the file in Project Knowledge. This is the only manual step. Without it, the next session starts blank.
+
+**If you are using Claude Code:** files are written to disk automatically. Nothing to do.
+
+---
+
 ## Commands
 
 | Command | What it does |

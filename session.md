@@ -6,12 +6,11 @@ Single source of truth for this coaching engagement. Update after every session.
 
 ## Client Profile
 name: Divakar BV
-background: Senior TPM/PM, 15+ years. Meta (Marketplace Search Filters, ML/AI, 2 yrs 3 mos), Amazon (Search services, Alexa, AWS EC2 launches), Franki (AI/ML data pipeline, SSO, 9 mos), SynergIQ AI (RAG LLM, current). MBA Georgia Tech. Strong search, marketplace, cloud infra domains.
+background: Senior TPM/PM, 15+ years. Meta (Marketplace Search Filters, ML/AI roadmap, 2 yrs 3 mos), Amazon (Search 16 countries, Alexa i18n, AWS EC2 region launches), Franki (AI/ML data pipeline, SSO, 9 mos), SynergIQ AI (RAG LLM, current own venture). MBA Georgia Tech. Strong search, marketplace, cloud infra, agentic AI domains.
 layoff date: January 2026 (from Franki)
-financial runway: 2 months
-what they've already tried: Running SynergIQ AI since Feb 2026 (own venture/consulting)
-biggest fear (in their words): AI chaos — too many gurus, courses, certifications, new companies; not knowing where to start or how to reposition
-identity notes: FAANG affiliation (Meta, Amazon) was source of social status and financial security. Loss of that container is the real wound, not the work itself. Confirmed: work matters without the logo. Status loss hurts more than financial loss.
+financial runway: 1 month
+what they've already tried: Running SynergIQ AI since Feb 2026; built JobHawk (AI job search agent); built Espanso web GUI
+biggest fear (in their words): No systematic way to execute PM skills using AI
 
 ---
 
@@ -26,15 +25,15 @@ last_session: 2026-05-23
 
 | Session | Commitment | Due | Status |
 |---|---|---|---|
-| 1 | Talk to one AI PM at a Series A or B company. 30-min conversation. Ask what an AI PM interview actually tests and what they wish they'd known. | 2026-05-30 | open |
+| 1 | Write down 3 specific PM tasks done regularly. Note where AI feels clunky or absent in each. | 2026-05-24 | open |
 
 ---
 
 ## Patterns Observed
-- Fear surfaces as a skills question. When overwhelmed, reaches for "what do I need to learn" instead of naming the underlying fear.
-- Status/identity wound is real and acknowledged. Not avoided. Good foundation.
-- Has genuine AI PM credentials (Meta ML filters, Franki data pipeline, RAG at SynergIQ) but frames himself through old FAANG logos. Framing problem, not skills problem.
-- Wants work that "transforms the world" — when pushed, clarified to: productivity improvement, reducing time to find things. Already doing this. Gap is connecting past work to current narrative.
+- Names gaps with precision and speed. Not common. Good signal.
+- Profile faces backward: headline anchors on 2023 FAANG logos, real story (JobHawk, Franki pipeline, RAG) buried in Featured section.
+- Has genuine AI PM credentials but confidence in naming them is the gap, not the skills.
+- Builder instinct strong: automated job search, built Espanso UI, building RAG systems. Does not wait around.
 
 ---
 
@@ -42,7 +41,7 @@ last_session: 2026-05-23
 
 | Session | Mode | What shifted |
 |---|---|---|
-| 1 | onboard + skill | Identified: not a skills gap, a framing and narrative gap. Fear keeps showing up as skills question. Status loss named directly. Commitment: one real PM conversation by Friday. |
+| 1 | skill | Real gap named: no systematic way to execute PM work using AI. Not a skills gap, a workflow/system gap. |
 
 ---
 
