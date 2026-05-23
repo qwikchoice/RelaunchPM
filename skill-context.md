@@ -43,6 +43,19 @@ Noise: model names, benchmarks, architecture, prompt engineering as PM skill
 
 ## The Real Gaps (What Actually Matters)
 
+### Gap 0: Ecosystem Positioning — Mindset Foundation
+Before closing any tactical gap, a PM needs to know which layer they are building for.
+Most PMs ask "what AI tools should I learn?" The right question: "Which layer of the AI ecosystem do I understand, control, or build for?"
+
+Load `ai-ecosystem.md` when:
+- PM is chasing tools without strategic positioning
+- PM describes their gap as "I need to learn more AI" (vague)
+- PM is unsure which type of company or role to target
+
+Coaching move: "Before we get into skills — tell me which layer of the AI ecosystem your target role operates in. If you can't answer that, that's actually the first gap."
+
+See full framework in `ai-ecosystem.md`.
+
 ### Gap 1: Evals Thinking — Highest Priority
 Defining and measuring success when the right answer isn't deterministic.
 Example: AI summarizes support tickets. How do you know if the summary is good?

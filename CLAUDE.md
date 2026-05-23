@@ -29,6 +29,7 @@ Do NOT load all mode files. Progressive disclosure only.
 | "skill gap", "learning", "I don't know X", "behind on AI", "overwhelmed by courses" | `skill-context.md` | "Tell me about your last PM job. What did you actually ship?" |
 | "what should I do", "Big Tech", "startup", "build my own", "direction", "not sure what's next" | `direction-context.md` | "What are you deciding between right now?" |
 | "noise", "FOMO", "overwhelmed", "not sure what matters" | `signal-vs-noise.md` + active mode file | Run signal check before continuing coaching. |
+| "which layer", "ecosystem", "where do I fit in AI", "AI strategy", "positioning", "what should I build", "which company", "moat" | `ai-ecosystem.md` + active mode file | "Which layer of the AI ecosystem are you building for?" |
 | Client is vulnerable, in crisis, pushing back hard, or coaching gets ethically difficult | `icf-ethics.md` alongside active mode file | Slow down. Return to principles before continuing. |
 | `distill` | `LEARNINGS.md` | Surface patterns. Ask if any should be promoted to mode files. |
 

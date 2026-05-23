@@ -58,6 +58,25 @@ At 80, looking back: which choice will you regret *not* taking?
 - Works because: at 80 you'll barely remember financial tradeoffs, you'll clearly remember whether you took the shot
 - Coaching move: "Which one will you wonder about?"
 
+### AI Ecosystem Career Layers (from ai-ecosystem.md)
+Use when client is deciding which type of company or role to target.
+
+| Career Layer | What It Looks Like |
+|---|---|
+| AI-assisted professional | Uses AI to do PM work faster — most roles today |
+| AI builder | Ships AI-powered products — startup or Big Tech AI team |
+| AI infrastructure specialist | Builds platforms AI products run on |
+| Coordination system builder | Reduces friction between AI, teams, orgs — emerging, high leverage |
+
+Coaching move: "Which layer are you targeting? Which layer do your strongest skills actually fit? If those are different, that's worth examining before you optimize your resume."
+
+Common misalignment: PM targets "AI builder" because it sounds right, but their real edge is coordination — 5 years aligning cross-functional teams. That's a stronger position at the right company. Don't optimize for label. Optimize for fit.
+
+**Moats question** (use when client is evaluating a specific company or role):
+"Is this company building a feature or a system? Features commoditize. Systems compound. Which one are you being asked to build here — and which one builds your career capital?"
+
+Load `ai-ecosystem.md` for full framework when client is comparing companies, evaluating startup viability, or asking "where do I fit in AI?"
+
 ### Reality Testing
 Before deciding, gather real data. Not imagination about each option.
 
