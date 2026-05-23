@@ -34,20 +34,20 @@ flowchart LR
         A[CLAUDE.md\nrouting + rules]
         B[identity.md\nwho Alex is]
         C[session.md\nclient state]
-        D[shared/study-mate.md\nLayer 2: how to learn]
-        E[shared/coaching-moves.md\nempathy, story, reframe, quotes]
+        D[study-mate.md\nLayer 2: how to learn]
+        E[coaching-moves.md\nempathy, story, reframe, quotes]
     end
 
     subgraph Progressive Disclosure
-        F[onboard/CONTEXT.md]
-        G[interview/CONTEXT.md]
-        H[skill/CONTEXT.md]
-        I[direction/CONTEXT.md]
+        F[onboard-context.md]
+        G[interview-context.md]
+        H[skill-context.md]
+        I[direction-context.md]
     end
 
     subgraph On Demand
-        J[shared/signal-vs-noise.md]
-        K[shared/icf-ethics.md]
+        J[signal-vs-noise.md]
+        K[icf-ethics.md]
     end
 
     A -->|routes to| F & G & H & I
@@ -147,25 +147,22 @@ Notable patterns from each session go into `LEARNINGS.md`. Run `distill` to surf
 ## Folder Structure
 
 ```
-Relaunch_PM/
-├── CLAUDE.md              <- routing table, global rules, session close requirement
-├── identity.md            <- who Alex is (coach backstory + beliefs)
-├── session.md             <- client state: mode, commitments, patterns, progress
-├── LEARNINGS.md           <- session log; run /distill to surface patterns
-├── onboard/
-│   └── CONTEXT.md         <- session 0: resume-first intake, 3 targeted questions
-├── interview/
-│   └── CONTEXT.md         <- narrative, STAR, AI lens, mock interview protocol
-├── skill/
-│   └── CONTEXT.md         <- real vs fake gaps, evals thinking, learning path
-├── direction/
-│   └── CONTEXT.md         <- IFS, ACT values, Bezos, 3-path reality check
-└── shared/
-    ├── coaching-moves.md  <- empathy moves, Alex anecdotes, quotes bank, stories, reframes
-    ├── study-mate.md      <- Layer 2: Memory + Diagnosis + Adaptation (Khosravi et al)
-    ├── signal-vs-noise.md <- what to learn vs ignore in the AI chaos
-    └── icf-ethics.md      <- Layer 1: ICF Code of Ethics in practice
+Relaunch_PM/                    <- upload ALL files here to Claude.ai Projects
+├── CLAUDE.md                   <- routing table, global rules, session close requirement
+├── identity.md                 <- who Alex is (coach backstory + beliefs)
+├── session.md                  <- client state: mode, commitments, patterns, progress
+├── LEARNINGS.md                <- session log; run /distill to surface patterns
+├── onboard-context.md          <- session 0: resume-first intake, 3 targeted questions
+├── interview-context.md        <- narrative, STAR, AI lens, mock interview protocol
+├── skill-context.md            <- real vs fake gaps, evals thinking, learning path
+├── direction-context.md        <- IFS, ACT values, Bezos, 3-path reality check
+├── coaching-moves.md           <- empathy moves, Alex anecdotes, quotes bank, stories, reframes
+├── study-mate.md               <- Layer 2: Memory + Diagnosis + Adaptation (Khosravi et al)
+├── signal-vs-noise.md          <- what to learn vs ignore in the AI chaos
+└── icf-ethics.md               <- Layer 1: ICF Code of Ethics in practice
 ```
+
+All files are flat — no subfolders. Designed for drag-and-drop upload to Claude.ai Projects.
 
 ---
 
@@ -173,9 +170,12 @@ Relaunch_PM/
 
 ### Option 1: Claude.ai Projects (Recommended, no install)
 1. Go to claude.ai, create a Project
-2. Upload all files from `Relaunch_PM/` into Project Knowledge
+2. Upload all 12 files into Project Knowledge — they are all flat (no subfolders), so select all and drag-drop
 3. Type `onboard` to start
-4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge so memory persists next session
+4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge to replace the old version so memory persists next session
+
+**Files to upload:**
+`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
 
 ### Option 2: Claude Code CLI
 Open this folder in Claude Code. CLAUDE.md activates automatically. Type `onboard`.
