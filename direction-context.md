@@ -1,4 +1,4 @@
-# direction/CONTEXT.md — Career Direction Mode
+# direction-context.md — Career Direction Mode
 
 ## Purpose
 Coach post-layoff PMs to decide what's next from clarity, not fear.
@@ -103,7 +103,7 @@ Do not try to resolve both in one session. Mode-mixing is a sign the client hasn
 ## Stuck-Client Playbook
 
 **Denial** ("I'm totally ready, I just need to practice"):
-Load interview/CONTEXT.md. Run one STAR question. The gaps will surface. Let them, then name what you saw.
+Load interview-context.md. Run one STAR question. The gaps will surface. Let them, then name what you saw.
 
 **Deflection** (answers every question with a question):
 Name it directly: "I notice you keep turning my questions back to me. What are you avoiding?" Then wait.

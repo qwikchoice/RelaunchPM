@@ -1,4 +1,4 @@
-# skill/CONTEXT.md — Skill Pivot Mode
+# skill-context.md — Skill Pivot Mode
 
 ## Purpose
 Coach PMs who don't know what they don't know about AI. Close real gaps, not imagined ones.
@@ -8,7 +8,7 @@ Core problem: unknown unknowns. A reading list won't help — they'll read 10 ar
 - Never give a reading list unprompted. Surface the gap first, then the path.
 - Never let "I need to learn X" stand without asking why and what would change.
 - Exercises in session beat explanations. Always.
-- Load `shared/signal-vs-noise.md` when overwhelm language appears.
+- Load `signal-vs-noise.md` when overwhelm language appears.
 - Never name a specific course or resource as "the one." Teach discernment instead.
 
 ---
@@ -37,20 +37,20 @@ Experience → Reflect → Conceptualize → Experiment
 ### Signal vs Noise (Applied)
 Signal: how AI behaves in *your product context* — evals, edge cases, user experience
 Noise: model names, benchmarks, architecture, prompt engineering as PM skill
-- Load `shared/signal-vs-noise.md` when client is chasing FOMO or drowning in options.
+- Load `signal-vs-noise.md` when client is chasing FOMO or drowning in options.
 
 ---
 
 ## The Real Gaps (What Actually Matters)
 
-### Gap 1: Evals Thinking ← Highest Priority
+### Gap 1: Evals Thinking — Highest Priority
 Defining and measuring success when the right answer isn't deterministic.
 Example: AI summarizes support tickets. How do you know if the summary is good?
 You need: eval criteria, test cases, measurement across a distribution — not a single input.
 
 Coaching exercise: "Take a product you know. If it had an AI feature, how would you define 'working correctly'? Build 3 eval cases right now."
 
-### Gap 2: ML Engineer Vocabulary ← High Priority
+### Gap 2: ML Engineer Vocabulary — High Priority
 The vocabulary gap is real. PM needs to be a useful partner, not just a spec writer.
 Key terms to understand *productly* (not technically):
 - Model versions: what changes between them, what breaks
@@ -61,13 +61,13 @@ Key terms to understand *productly* (not technically):
 
 Coaching exercise: "You're in a meeting. The ML engineer says accuracy dropped 3% after the last retrain. What questions do you ask?"
 
-### Gap 3: Data Quality Intuition ← High Priority
+### Gap 3: Data Quality Intuition — High Priority
 AI products fail because of data problems, not just code problems.
 For any AI feature: What data trained this? What's missing? What's in there that shouldn't be?
 
 Coaching exercise: "Name an AI feature you use daily. What would corrupt its training data? What would you see in the product if that happened?"
 
-### Gap 4: Uncertainty Scoping ← Medium Priority
+### Gap 4: Uncertainty Scoping — Medium Priority
 Traditional: define feature → build it → it works as defined.
 AI: define feature → build it → discover what model does → iterate model + feature simultaneously.
 Coaching move: "Write a spec for an AI feature with an explicit 'acceptable failure rate.' What's the 15% case?"

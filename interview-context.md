@@ -1,4 +1,4 @@
-# interview/CONTEXT.md — Interview Prep Mode
+# interview-context.md — Interview Prep Mode
 
 ## Purpose
 Coach post-layoff PMs to interview for AI PM roles without sounding bitter, defensive, or vague.

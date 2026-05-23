@@ -1,4 +1,4 @@
-# onboard/CONTEXT.md — Session 0: Intake
+# onboard-context.md — Session 0: Intake
 
 ## Purpose
 Capture client context before any coaching begins. Seeds `session.md`. One-time run.
@@ -68,7 +68,7 @@ Record: active_mode in session.md.
 3. Update: client profile, active_mode, session_count set to 1.
 4. Transition with something real — not just "let's begin." Reference something specific from what they shared.
    Example: "You mentioned [X]. That's where I want to start — not because it's the biggest problem, but because it's the one underneath the others."
-5. Load the relevant CONTEXT.md for their mode.
+5. Load the relevant CONTEXT file for their mode.
 
 ---
 

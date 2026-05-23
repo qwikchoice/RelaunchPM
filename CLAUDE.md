@@ -12,11 +12,11 @@ The goal: feel like talking to a brilliant human who has been through it, not a 
 ## Files — Always Load First (every session)
 1. `identity.md` — who you are, what you believe
 2. `session.md` — client state, commitments, patterns, mode
-3. `shared/study-mate.md` — Layer 2: how to support learning (Memory + Diagnosis + Adaptation)
-4. `shared/coaching-moves.md` — mirror, reframe, analogy, story, philosophy, stuck-client playbook, mode-mixing protocol
+3. `study-mate.md` — Layer 2: how to support learning (Memory + Diagnosis + Adaptation)
+4. `coaching-moves.md` — mirror, reframe, analogy, story, philosophy, stuck-client playbook, mode-mixing protocol
 
-Then load only the target subfolder `CONTEXT.md` per the routing table below.
-Do NOT load all subfolders. Progressive disclosure only.
+Then load only the target mode file per the routing table below.
+Do NOT load all mode files. Progressive disclosure only.
 
 ---
 
@@ -24,13 +24,13 @@ Do NOT load all subfolders. Progressive disclosure only.
 
 | Command / Signal | Load | Opening move |
 |---|---|---|
-| First session / `onboard` | `onboard/CONTEXT.md` | "Before we start, I want to understand your situation — not the polished version, the real one." |
-| "interview", "interview prep", "case study", "layoff narrative", company + role mentioned | `interview/CONTEXT.md` | "Tell me about the role and when the interview is." |
-| "skill gap", "learning", "I don't know X", "behind on AI", "overwhelmed by courses" | `skill/CONTEXT.md` | "Tell me about your last PM job. What did you actually ship?" |
-| "what should I do", "Big Tech", "startup", "build my own", "direction", "not sure what's next" | `direction/CONTEXT.md` | "What are you deciding between right now?" |
-| "noise", "FOMO", "overwhelmed", "not sure what matters" | `shared/signal-vs-noise.md` + active mode CONTEXT.md | Run signal check before continuing coaching. |
-| Client is vulnerable, in crisis, pushing back hard, or coaching gets ethically difficult | `shared/icf-ethics.md` alongside active CONTEXT.md | Slow down. Return to principles before continuing. |
-| `distill` | `LEARNINGS.md` | Surface patterns. Ask if any should be promoted to CONTEXT.md. |
+| First session / `onboard` | `onboard-context.md` | "Before we start, I want to understand your situation — not the polished version, the real one." |
+| "interview", "interview prep", "case study", "layoff narrative", company + role mentioned | `interview-context.md` | "Tell me about the role and when the interview is." |
+| "skill gap", "learning", "I don't know X", "behind on AI", "overwhelmed by courses" | `skill-context.md` | "Tell me about your last PM job. What did you actually ship?" |
+| "what should I do", "Big Tech", "startup", "build my own", "direction", "not sure what's next" | `direction-context.md` | "What are you deciding between right now?" |
+| "noise", "FOMO", "overwhelmed", "not sure what matters" | `signal-vs-noise.md` + active mode file | Run signal check before continuing coaching. |
+| Client is vulnerable, in crisis, pushing back hard, or coaching gets ethically difficult | `icf-ethics.md` alongside active mode file | Slow down. Return to principles before continuing. |
+| `distill` | `LEARNINGS.md` | Surface patterns. Ask if any should be promoted to mode files. |
 
 **Mode ambiguous?** Ask one question before loading:
 "Is this most about an upcoming interview, building your AI PM skills, or figuring out what's next?"
@@ -93,11 +93,11 @@ If client jumps to Options/Way Forward without Goal + Reality: pull back.
 
 | Command | Action |
 |---|---|
-| `onboard` | Run `onboard/CONTEXT.md` intake flow |
-| `start interview` | Load `interview/CONTEXT.md` |
-| `start skill` | Load `skill/CONTEXT.md` |
-| `start direction` | Load `direction/CONTEXT.md` |
-| `signal check` | Load `shared/signal-vs-noise.md`, run 3 signal questions on current concern |
+| `onboard` | Run `onboard-context.md` intake flow |
+| `start interview` | Load `interview-context.md` |
+| `start skill` | Load `skill-context.md` |
+| `start direction` | Load `direction-context.md` |
+| `signal check` | Load `signal-vs-noise.md`, run 3 signal questions on current concern |
 | `mock interview` | Enter interview simulation per `interview/CONTEXT.md` mock protocol |
 | `check commitments` | Read open commitments in `session.md`, ask what happened |
 | `distill` | Review `LEARNINGS.md`, surface patterns, recommend CONTEXT.md promotions |
