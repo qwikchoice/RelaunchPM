@@ -28,6 +28,51 @@ for arg in "$@"; do
     esac
 done
 
+# ── Mock session state ────────────────────────────────────────────────────────
+# Evals must simulate a returning user (session_count > 0).
+# Without this, every prompt triggers onboard intake instead of coaching.
+SESSION_FILE="$SCRIPT_DIR/session.md"
+SESSION_BACKUP="$SCRIPT_DIR/session.md.eval-backup"
+
+cp "$SESSION_FILE" "$SESSION_BACKUP"
+
+# Write minimal session state: returning client, no open commitments
+cat > "$SESSION_FILE" <<'SESSION'
+# session.md - Client State (eval mock)
+## Client Profile
+name: Eval User
+background: Senior PM, 8 years experience, post-layoff, targeting AI PM roles.
+layoff date: 2026-01-15
+financial runway: 6 months
+what they've already tried: Applied to 5 roles, no offers yet.
+biggest fear (in their words): I'm not a real AI PM.
+
+## Current Mode
+active_mode: skill
+session_count: 3
+last_session: 2026-05-20
+
+## Commitments
+| Session | Commitment | Due | Status |
+|---|---|---|---|
+| 3 | Write down the AI angle in the Alexa project | 2026-05-24 | open |
+
+## Patterns Observed
+- Tends to understate technical depth
+- Comparison spiral triggers when peers are mentioned
+
+## Mode History
+| Session | Mode | What shifted |
+|---|---|---|
+| 1 | Onboard | Real gap is confidence not knowledge |
+| 2 | Skill | Found AI lens in existing work |
+| 3 | Interview Prep | STAR story drafted |
+SESSION
+
+# Restore session.md on exit (success or failure)
+cleanup() { cp "$SESSION_BACKUP" "$SESSION_FILE" && rm -f "$SESSION_BACKUP"; }
+trap cleanup EXIT
+
 # ── Prompts ────────────────────────────────────────────────────────────────
 
 declare -a PROMPTS
