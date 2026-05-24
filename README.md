@@ -11,14 +11,16 @@ It's a coach, not a knowledge base. It asks questions. It pushes back. It tells 
 **1. Create a Claude.ai Project**
 Go to [claude.ai](https://claude.ai) and create a new Project.
 
-**2. Upload these 17 files**
+**2. Upload these 22 files**
 ```
-CLAUDE.md           identity.md         session.md
-LEARNINGS.md        onboard-context.md  interview-context.md
-skill-context.md    direction-context.md ai-ecosystem.md
-coaching-moves.md   study-mate.md       signal-vs-noise.md
-icf-ethics.md       pm-skills-context.md evals.md
-eval-checklist.md   AI_Ecosystem_Strategy_Course.txt
+CLAUDE.md              identity.md            session.md
+LEARNINGS.md           onboard-context.md     interview-context.md
+skill-context.md       direction-context.md   ai-ecosystem.md
+coaching-moves.md      study-mate.md          signal-vs-noise.md
+icf-ethics.md          pm-skills-context.md   evals.md
+eval-checklist.md      emergency-kit.md       ai-story-builder.md
+interview-panic-room.md offer-compass.md      signal-cut.md
+AI_Ecosystem_Strategy_Course.txt
 ```
 All files are flat - select all, drag-drop into Project Knowledge.
 
@@ -60,10 +62,15 @@ You never repeat yourself. The coach remembers.
 
 ## Commands
 
-| Command | What it does |
+| Command / What you say | What happens |
 |---|---|
 | `onboard` | First-time intake - drop your resume, coach reads it, 3 questions |
-| `start interview` | Interview prep: narrative, STAR stories, AI lens, mock |
+| "I just got laid off" / "access just cut" | Layoff Day Emergency Kit - 72-hour plan, no fear decisions |
+| "I have no AI on my resume" | AI Story Builder - finds AI lens in existing work, 3 interview-ready stories |
+| "Interview tomorrow" / "48 hours" | Interview Panic Room - story, mock, debrief, one fix, conviction |
+| "Two offers" / "should I take it" | Offer Compass - IFS parts work, ACT values, decision from Self not Fear |
+| "Too much to learn" / reads a list | Signal Cut - 2-3 things that matter, everything else dropped in writing |
+| `start interview` | Full interview prep: narrative, STAR stories, AI lens, mock |
 | `start skill` | Skill pivot: find the real gap, close it with focused work |
 | `start direction` | Career direction: values, IFS, Bezos, reality testing |
 | `signal check` | Run current concern through signal vs noise framework |

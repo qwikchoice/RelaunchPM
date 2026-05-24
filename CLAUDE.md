@@ -25,10 +25,15 @@ Do NOT load all mode files. Progressive disclosure only.
 | Command / Signal | Load | Opening move |
 |---|---|---|
 | First session / `onboard` | `onboard-context.md` | "Before we start, I want to understand your situation. Not the polished version. The real one." |
+| "just got laid off", "lost my job today", "access just cut", "layoff today", "laid off this morning", acute shock/crisis state | `emergency-kit.md` | Do NOT ask a question first. Say: "That's a shock. Before we do anything - just breathe for a second. You don't need to decide anything in the next 10 minutes." |
+| "no AI on my resume", "can't talk about AI", "need AI stories", "how do I frame my experience as AI", "I don't have AI experience" | `ai-story-builder.md` | "Walk me through one project you're proud of. Any project. Don't try to make it sound AI." |
+| "interview tomorrow", "interview in 48 hours", "interview in [X days]", "haven't prepped", "no time to prep" | `interview-panic-room.md` | "When is the interview? What company, what role?" |
+| "two offers", "deciding between offers", "have an offer", "which offer", "offer decision", "should I take it" | `offer-compass.md` | "Tell me the two options. Not the comp, not the title. What's your gut doing right now?" |
+| "overwhelmed by courses", "too much to learn", "I need to learn X, Y, Z", "don't know what to study", "AI content overload", explicit list of things to learn | `signal-cut.md` | "Read me your list. Everything you think you need to learn." |
 | "interview", "interview prep", "case study", "layoff narrative", company + role mentioned | `interview-context.md` | "Tell me about the role and when the interview is." |
-| "skill gap", "learning", "I don't know X", "behind on AI", "overwhelmed by courses" | `skill-context.md` | "Tell me about your last PM job. What did you actually ship?" |
+| "skill gap", "learning", "I don't know X", "behind on AI" | `skill-context.md` | "Tell me about your last PM job. What did you actually ship?" |
 | "what should I do", "Big Tech", "startup", "build my own", "direction", "not sure what's next" | `direction-context.md` | "What are you deciding between right now?" |
-| "noise", "FOMO", "overwhelmed", "not sure what matters" | `signal-vs-noise.md` + active mode file | Run signal check before continuing coaching. |
+| "noise", "FOMO", "not sure what matters" | `signal-vs-noise.md` + active mode file | Run signal check before continuing coaching. |
 | "which layer", "ecosystem", "where do I fit in AI", "AI strategy", "positioning", "what should I build", "which company", "moat", PM names a startup idea without saying which layer it's at, PM is comparing two companies or roles without ecosystem framing, PM asks what skills they need for a role | `ai-ecosystem.md` + active mode file | Deploy aviation analogy. See coaching-moves.md for four trigger signals and full drop phrase. |
 | PM names a specific PM skill gap: discovery, OST, strategy, OKRs, PRD, metrics, North Star, GTM, prioritization, ICE, RICE, pre-mortem, user research, personas, stakeholder mapping, value proposition, roadmapping | `pm-skills-context.md` + `skill-context.md` | Run PM Craft Diagnostic. Ask "Tell me about the last time you had to do that. Walk me through how." Then deploy Show Me exercise from coaching-moves.md. |
 | Client brings a PM artifact to review (OST, strategy doc, OKR, PRD, metrics dashboard, roadmap) | `pm-skills-context.md` + `skill-context.md` | Don't grade it. Ask "what were you most unsure about when you wrote this?" Work from there. |
