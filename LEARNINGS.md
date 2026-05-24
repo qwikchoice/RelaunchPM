@@ -36,6 +36,13 @@ what worked: Reframe "framing problem not skills problem" landed immediately; "w
 what to try next time: Deploy Alex's status spiral anecdote earlier when identity loss surfaces; use Samurai story at the skills panic moment
 status: new
 ---
+date: 2026-05-23
+mode: Skill / Interview Prep
+what happened: Divakar BV came in thinking vocabulary gap + communication gap; diagnostic revealed deep AI PM knowledge (F1, RLHF, confidence thresholds, human-in-the-loop) already present; real gap is delivery confidence under pressure
+what worked: Asking for a specific number exposed the performance anxiety vs. knowledge gap distinction; pointing out fluency shift when explaining technical problem vs. performing "PM voice" landed as a clear reframe
+what to try next time: Push STAR rewrite assignment earlier; if client slips into jargon-seeking behavior again, name it directly and redirect to explanation mode
+status: new
+---
 
 ---
 date: 2026-05-23

@@ -6,72 +6,74 @@ It's a coach, not a knowledge base. It asks questions. It pushes back. It tells 
 
 ---
 
-## How It Works
+## Quick Start - 3 Steps
+
+**1. Create a Claude.ai Project**
+Go to [claude.ai](https://claude.ai) and create a new Project.
+
+**2. Upload these 17 files**
+```
+CLAUDE.md           identity.md         session.md
+LEARNINGS.md        onboard-context.md  interview-context.md
+skill-context.md    direction-context.md ai-ecosystem.md
+coaching-moves.md   study-mate.md       signal-vs-noise.md
+icf-ethics.md       pm-skills-context.md evals.md
+eval-checklist.md   AI_Ecosystem_Strategy_Course.txt
+```
+All files are flat - select all, drag-drop into Project Knowledge.
+
+**3. Start**
+Type `onboard` in your first session. Drop your resume or LinkedIn URL when asked. Coaching starts immediately after.
+
+That's it. No installs. No config. No CLI.
+
+---
+
+## How Sessions Work
 
 ```mermaid
 flowchart TD
-    A([You open a session]) --> B[CLAUDE.md\nloads always-on files]
-    B --> C{session.md:\nopen commitments?}
-    C -->|Yes| D[Coach opens:\nLast time you said X.\nWhat happened?]
-    C -->|No| E{What signal\ndid you bring?}
-    E -->|onboard| F[onboard/CONTEXT.md\nSession 0 intake]
-    E -->|interview signals| G[interview/CONTEXT.md\nNarrative + STAR + AI lens]
-    E -->|skill signals| H[skill/CONTEXT.md\nReal gap vs imagined gap]
-    E -->|direction signals| I[direction/CONTEXT.md\nValues, IFS, Bezos]
-    E -->|noise / FOMO| J[signal-vs-noise.md\nSignal check first]
-    F & G & H & I & J --> K[GROW session:\nGoal > Reality > Options > Way Forward]
-    K --> L[One specific commitment\nBy when. How you'll know.]
-    L --> M[session.md updated\nSee you next time]
+    A([Open project in Claude.ai]) --> B[Coach reads session.md]
+    B --> C{First session?}
+    C -->|Yes - type onboard| D[Drop resume or LinkedIn URL\nCoach reads it, makes one\nreal observation, asks 3 questions]
+    C -->|No - just start talking| E[Coach opens with:\nLast time you said X.\nWhat happened?]
+    D & E --> F[GROW session:\nGoal > Reality > Options > Way Forward]
+    F --> G[One specific commitment\nBy when. How you will know.]
+    G --> H[Coach outputs updated session.md\nCopy it back into Project Knowledge]
 ```
 
----
-
-## Architecture
-
-```mermaid
-flowchart LR
-    subgraph Always Loaded
-        A[CLAUDE.md\nrouting + rules]
-        B[identity.md\nwho Alex is]
-        C[session.md\nclient state]
-        D[study-mate.md\nLayer 2: how to learn]
-        E[coaching-moves.md\nempathy, story, reframe, quotes]
-    end
-
-    subgraph Progressive Disclosure
-        F[onboard-context.md]
-        G[interview-context.md]
-        H[skill-context.md]
-        I[direction-context.md]
-    end
-
-    subgraph On Demand
-        J[signal-vs-noise.md]
-        K[icf-ethics.md]
-    end
-
-    A -->|routes to| F & G & H & I
-    A -->|triggers| J & K
-```
-
-CLAUDE.md is routing only. Coaching craft lives in shared/. Mode-specific frameworks live in CONTEXT.md files. Nothing loads until needed.
+**After every session:** The coach outputs an updated `session.md` in the chat. Copy it and replace the file in Project Knowledge. This is the only manual step - without it, the next session starts blank.
 
 ---
 
-## PM Craft Mentorship (powered by PM-Skills by Pawel Huryn)
+## Session Memory
 
-The coach draws on 65 PM skills across 8 domains (discovery, strategy, execution, research, data, GTM, growth, communication) to mentor PMs on upgrading their craft. When you name a specific skill gap, the coach:
+`session.md` is the single source of truth. It tracks:
+- Your background, layoff context, runway, fears in your own words
+- Active mode and session count
+- Every commitment you've made - never auto-closed, always checked at next open
+- Patterns observed across sessions
 
-1. Runs a diagnostic question to find the precise gap, not the stated gap
-2. Deploys a "Show Me" exercise in session (doing surfaces gaps faster than asking)
-3. Assigns a specific pm-skills exercise as homework
-4. Reviews your output in the next session and holds you accountable
-
-Frameworks drawn from Teresa Torres (OST, continuous discovery), Marty Cagan (strategy, empowered teams), Dan Olsen (Opportunity Score, Lean Product), Alberto Savoia (pretotypes, lean validation), Strategyzer (Business Model Canvas, Value Proposition Design), Christina Wodtke (OKRs), and others.
+You never repeat yourself. The coach remembers.
 
 ---
 
-## The Three Modes
+## Commands
+
+| Command | What it does |
+|---|---|
+| `onboard` | First-time intake - drop your resume, coach reads it, 3 questions |
+| `start interview` | Interview prep: narrative, STAR stories, AI lens, mock |
+| `start skill` | Skill pivot: find the real gap, close it with focused work |
+| `start direction` | Career direction: values, IFS, Bezos, reality testing |
+| `signal check` | Run current concern through signal vs noise framework |
+| `mock interview` | Simulated AI PM interview with full debrief |
+| `check commitments` | Review open commitments from last session |
+| `distill` | Surface patterns from LEARNINGS.md, promote to coaching files |
+
+---
+
+## Three Modes
 
 ```mermaid
 flowchart LR
@@ -99,159 +101,15 @@ flowchart LR
 
 ---
 
-## Coaching Framework (3 Layers)
+## PM Craft Mentorship
 
-```mermaid
-flowchart TB
-    L1[Layer 1: ICF Code of Ethics\nshared/icf-ethics.md\nSets the standard for the coaching relationship]
-    L2[Layer 2: Study Mate Model\nshared/study-mate.md\nMemory + Diagnosis + Adaptation\nKhosravi et al 2026]
-    L3[Layer 3: Coaching Moves\nshared/coaching-moves.md\nEmpathy, Story, Reframe, Quotes, Alex anecdotes]
+When you name a specific PM skill gap, the coach:
+1. Runs a diagnostic to find the precise gap, not the stated gap
+2. Deploys a Show Me exercise in session (doing surfaces gaps faster than asking)
+3. Assigns a specific pm-skills exercise as homework
+4. Reviews your output next session and holds you accountable
 
-    L1 --> L2 --> L3
-
-    subgraph Per-Mode Frameworks
-        M1[Interview: Ibarra Working Identity,\nPositioning Theory, Somatic Coaching,\nPositive Intelligence saboteurs]
-        M2[Skill: Vygotsky ZPD, Feynman Technique,\nKolb Learning Cycle, Signal vs Noise]
-        M3[Direction: IFS parts work, ACT values,\nBezos Regret Minimization, Reality Testing]
-    end
-
-    L3 --> M1 & M2 & M3
-```
-
----
-
-## Session Shape
-
-```mermaid
-flowchart LR
-    O[Open\nEmpathy + question\nGet to the real thing] --> M
-    M[Middle\nQuestions + one move\nReframe, story, or quote\nwhen moment is right] --> I
-    I[Inflection Point\nSomething real surfaces\nSlow down\nDrop a story or quote\nLet it breathe] --> C
-    C[Close\nMirror what shifted\nOne commitment\nSpecific, by when,\nhow they will know\nWrite session.md to disk]
-```
-
----
-
-## Session Memory and Auto-Learning
-
-### How Memory Works
-Every session ends with the coach writing `session.md` to disk. This file tracks:
-- Client profile (background, layoff context, runway, fears in their own words)
-- Active mode and session count
-- Every commitment made — never auto-closed, always checked at next session open
-- Patterns observed across sessions (saboteurs, thinking traps, what creates momentum)
-- Progress markers toward coaching goals
-
-On the next session open, the coach reads `session.md` first. You never repeat yourself.
-
-### Auto-Learning Loop
-
-```mermaid
-flowchart LR
-    S[Session] --> L[LEARNINGS.md\nraw session log]
-    L -->|distill command| P[Patterns promoted to\nrelevant CONTEXT.md]
-    P --> S
-```
-
-Notable patterns from each session go into `LEARNINGS.md`. Run `distill` to surface them and promote the most important ones into the coaching frameworks. The coach gets sharper with every session.
-
----
-
-## Folder Structure
-
-```
-Relaunch_PM/                    <- upload ALL files here to Claude.ai Projects
-├── CLAUDE.md                   <- routing table, global rules, session close requirement
-├── identity.md                 <- who Alex is (coach backstory + beliefs)
-├── session.md                  <- client state: mode, commitments, patterns, progress
-├── LEARNINGS.md                <- session log; run /distill to surface patterns
-├── pm-skills-context.md        <- PM craft mentorship: 8 skill areas, diagnostics, show-me exercises, homework assignments
-├── evals.md                    <- scoring rubric, drift thresholds, distill gate, eval log
-├── eval-checklist.md           <- 2-minute human scoring form; append to eval log after each session
-├── eval-runner.sh              <- automated compliance checker; runs 10 spot-check prompts via Claude CLI
-├── onboard-context.md          <- session 0: resume-first intake, 3 targeted questions
-├── interview-context.md        <- narrative, STAR, AI lens, mock interview protocol
-├── skill-context.md            <- real vs fake gaps, evals thinking, learning path
-├── direction-context.md        <- IFS, ACT values, Bezos, 3-path reality check
-├── ai-ecosystem.md             <- aviation analogy, moats, career layers, 5 strategic questions
-├── coaching-moves.md           <- empathy moves, Alex anecdotes, quotes bank, stories, reframes
-├── study-mate.md               <- Layer 2: Memory + Diagnosis + Adaptation (Khosravi et al)
-├── signal-vs-noise.md          <- what to learn vs ignore in the AI chaos
-└── icf-ethics.md               <- Layer 1: ICF Code of Ethics in practice
-```
-
-All files are flat — no subfolders. Designed for drag-and-drop upload to Claude.ai Projects.
-
----
-
-## How to Use It
-
-### Option 1: Claude.ai Projects (Recommended, no install)
-1. Go to claude.ai, create a Project
-2. Upload all 12 files into Project Knowledge — they are all flat (no subfolders), so select all and drag-drop
-3. Type `onboard` to start
-4. At the end of each session, the coach outputs updated `session.md` — paste it back into Project Knowledge to replace the old version so memory persists next session
-
-**Files to upload (17 total):**
-`CLAUDE.md`, `identity.md`, `session.md`, `LEARNINGS.md`, `pm-skills-context.md`, `evals.md`, `eval-checklist.md`, `eval-runner.sh`, `onboard-context.md`, `interview-context.md`, `skill-context.md`, `direction-context.md`, `ai-ecosystem.md`, `coaching-moves.md`, `study-mate.md`, `signal-vs-noise.md`, `icf-ethics.md`
-
-**Note:** `eval-runner.sh` requires the Claude CLI and is only useful with Claude Code. Claude.ai Projects users can use `eval-checklist.md` for human scoring and `evals.md` for the spot-check prompts manually.
-
-### Option 2: Claude Code CLI
-Open this folder in Claude Code. CLAUDE.md activates automatically. Type `onboard`.
-
----
-
-## Starting a Session
-
-**First session ever:**
-Type: `onboard`
-Drop your resume or LinkedIn URL when asked. The coach reads it, delivers one real observation, then asks 3 questions. Done. Coaching starts immediately after.
-
-**Every session after that:**
-Just open the project and start talking. The coach reads `session.md` on load and opens with your last commitment. If you want to jump to a specific mode, type `start interview`, `start skill`, or `start direction`.
-
----
-
-## Ending a Session
-
-When you are done, say: `end session` or just say you need to stop.
-
-The coach will close with:
-
-1. **Session Summary** — what you worked on, what shifted
-2. **Your Commitment** — the one specific action, by when, how you will know it is done
-3. **Coach's Take** — one observation you might not see yet
-4. **Closing** — a quote, story, or anecdote that leaves you grounded and clear
-
----
-
-## What Happens After the Session Ends
-
-**The coach writes two files automatically:**
-
-`session.md` — updated with your profile, new commitments, patterns observed. Next session opens from exactly here.
-
-`LEARNINGS.md` — one entry added with what happened, what worked, what to try next time. Run `distill` after 3+ sessions to promote patterns into the coaching frameworks.
-
-**If you are using Claude.ai Projects:** copy the updated `session.md` the coach outputs in chat and replace the file in Project Knowledge. This is the only manual step. Without it, the next session starts blank.
-
-**If you are using Claude Code:** files are written to disk automatically. Nothing to do.
-
----
-
-## Commands
-
-| Command | What it does |
-|---|---|
-| `onboard` | Session 0 intake — run first |
-| `start interview` | Enter interview prep mode |
-| `start skill` | Enter skill pivot mode |
-| `start direction` | Enter career direction mode |
-| `signal check` | Run current concern through signal vs noise framework |
-| `mock interview` | Simulated AI PM interview with debrief |
-| `check commitments` | Review open commitments from last session |
-| `distill` | Surface patterns from LEARNINGS.md, promote to CONTEXT.md |
+Draws on Torres OST, Cagan strategy, Olsen Opportunity Score, Wodtke OKRs, JTBD, Ellis NSM, and 65 PM skills across 8 domains.
 
 ---
 
@@ -263,70 +121,102 @@ The coach will close with:
 | "You've got this!" | "That sounds like fear talking. What do you actually want?" |
 | Reading lists | Exercises that surface your real gap |
 | Career advice | Questions that make you think clearly enough to decide yourself |
-| A bot that asks questions | A coach who has been through it: empathy, stories, hard truths |
 | Starting from scratch every session | A coach who remembers everything and holds you accountable |
-
----
-
-## Evaluating the Coach
-
-`evals.md` contains the full quality rubric for this system. Use it when:
-- You've made changes to any coaching file and want to verify behavior held
-- A session felt off and you want to diagnose which criterion failed
-- You're sharing this with someone and want to validate it works before they use it
-
-Quick spot-check: run any of the 10 prompts in `evals.md` as a single turn. Each should produce a coaching question, not an answer or a list.
-
-**Passing threshold:** Average 4.0/5, no criterion below 3, zero em-dashes.
-
-**Automated check (Claude Code):**
-```bash
-./eval-runner.sh          # full 10-prompt run
-./eval-runner.sh --quick  # 3-prompt smoke test after small edits
-```
-
-**Human scoring:** Fill in `eval-checklist.md` after every live session. Append row to eval log in `evals.md`.
-
-**Drift detection:** Any criterion below 3.5 rolling average over 5 sessions requires investigation. Em-dash in any commit is blocked by pre-commit hook.
-
-**Known failure modes to watch:** aviation analogy misses on startup-idea signals, empathy skipped in lower-stakes sessions, partial analogy deployment. Full details in `evals.md`.
 
 ---
 
 ## FAQ
 
 **What should I bring to the first session?**
-Your resume or LinkedIn URL. The coach reads it first and extracts your background before asking anything — so you are not interrogated before seeing any value. You will only be asked what a document cannot tell: financial runway, what you are scared of, what is most urgent.
+Your resume or LinkedIn URL. The coach reads it, makes one real observation, then asks only what a document can't tell: runway, what you're scared of, what's most urgent.
 
 **What should I bring to subsequent sessions?**
-Nothing. The coach reads `session.md` on open. It knows what you committed to, what patterns have emerged, where you left off. Show up and pick up where you stopped.
+Nothing. Open the project and start talking. The coach reads session.md and opens with your last commitment.
 
-**How does the coaching framework work?**
-Every session follows GROW: Goal, Reality, Options, Way Forward. The coach will not let you jump to options without getting honest about goal and reality first. Every session ends with one specific commitment — by when, how you will know it is done.
-
-The coach uses ICF coaching ethics as its foundation (Layer 1), the Study Mate model to build durable capability not dependence (Layer 2), and a full toolkit of human coaching moves — empathy, reframes, analogies, personal anecdotes from the coach's own layoff, quotes from Frankl, Aurelius, Naval, Campbell — deployed at the right moments (Layer 3).
-
-**How does session memory work?**
-After every session, the coach writes `session.md` to disk. This file is the single source of truth: your profile, your fears in your own words, every commitment you have made, patterns observed across sessions. The next session starts by reading it. You never repeat yourself.
-
-**What is the auto-learning loop?**
-Patterns from sessions go into `LEARNINGS.md`. Run `distill` to surface those patterns and promote the most important ones into the coaching frameworks. The coach gets more calibrated to you over time.
-
-**How long until I see results?**
-Session 1: you will feel understood, not interrogated. That is different from most tools.
-Sessions 1-3: the real picture comes into focus — what is actually holding you back vs. what you think is.
-Sessions 4-8: patterns get named, commitments get harder, progress becomes visible.
-Sessions 9+: you start coaching yourself. That is the goal.
+**What if I forget to update session.md after a session?**
+The next session starts without memory of the last one. Always copy the updated session.md the coach outputs back into Project Knowledge before closing.
 
 **Will this coach tell me what job to take?**
 No. It will help you think clearly enough to decide yourself.
 
-**What if I push back on the coach?**
-Good. If you can argue why something matters, that is signal. The coach will engage.
-
-**What if I just want answers?**
-Read the docs. This is not the right tool. But if you want to think clearly, you are in the right place.
+**How long until results?**
+Session 1: feel understood, not interrogated.
+Sessions 1-3: the real picture comes into focus - what is actually holding you back.
+Sessions 4-8: patterns get named, commitments get harder, progress becomes visible.
+Sessions 9+: you start coaching yourself. That is the goal.
 
 ---
 
 Built for post-layoff PMs ready to come back. Not a shortcut. Just clarity.
+
+---
+---
+
+## For Maintainers
+
+Everything below is for maintaining and improving the coach. End users don't need any of this.
+
+### Local Dev Setup (Claude Code)
+
+```bash
+git clone https://github.com/qwikchoice/RelaunchPM.git
+cd RelaunchPM
+bash setup.sh
+```
+
+`setup.sh` checks deps, installs claude-eval, installs pre-commit hook.
+
+**Dependencies:**
+
+| Tool | Version | Purpose |
+|---|---|---|
+| Claude Code CLI | 2.1.x+ | Session file writes to disk |
+| Node.js | v18+ | claude-eval runner |
+| npm | any | install claude-eval |
+| ANTHROPIC_API_KEY | - | eval-runner.sh + CI |
+
+In Claude Code, `session.md` is written to disk automatically - no manual copy needed.
+
+### Running Evals
+
+```bash
+./eval-runner.sh --quick     # 3-prompt smoke test
+./eval-runner.sh             # full 10-prompt run
+./eval-runner.sh --prompt 3  # single prompt
+```
+
+Passing threshold: avg 4.0/5, no criterion below 3, zero em-dashes.
+
+### CI
+
+Every push to master triggers: em-dash gate then 10 YAML evals via `claude-eval`.
+Requires `ANTHROPIC_API_KEY` secret set on the GitHub repo.
+
+```bash
+gh secret set ANTHROPIC_API_KEY --repo qwikchoice/RelaunchPM
+```
+
+### Human Scoring
+
+Fill `eval-checklist.md` after each live session. Append row to eval log in `evals.md`.
+
+### Drift Signals to Watch
+
+- Aviation analogy missing on startup-idea triggers
+- Empathy skipped in lower-stakes sessions
+- Em-dash creep in responses
+
+Full details in `evals.md`.
+
+### Folder Structure (full)
+
+```
+Relaunch_PM/
+├── [17 coaching files - see Quick Start above]
+├── setup.sh                    <- maintainer: one-time local dev setup
+├── eval-runner.sh              <- maintainer: automated 10-prompt compliance check
+├── eval-checklist.md           <- maintainer: human scoring form per session
+├── evals.md                    <- maintainer: rubric, drift thresholds, eval log
+├── evals/                      <- maintainer: 10 YAML evals for CI
+└── .github/workflows/evals.yml <- maintainer: CI pipeline
+```
