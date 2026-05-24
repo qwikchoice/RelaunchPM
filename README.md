@@ -1,8 +1,10 @@
 # Relaunch PM Coach
 
-A personal AI coaching system for post-layoff PMs navigating the AI PM transition in 2026.
+**Your access just got cut. Your interview is in 48 hours. You have two offers and you're deciding from fear.**
 
-It's a coach, not a knowledge base. It asks questions. It pushes back. It tells you hard truths. It holds you accountable.
+This coach meets you at the specific painful moment. Asks questions. Pushes back. Holds you accountable. Produces something tangible before the session ends.
+
+Not a knowledge base. Not a chatbot. A coach.
 
 ---
 
@@ -11,7 +13,7 @@ It's a coach, not a knowledge base. It asks questions. It pushes back. It tells 
 **1. Create a Claude.ai Project**
 Go to [claude.ai](https://claude.ai) and create a new Project.
 
-**2. Upload these 22 files**
+**2. Upload all 22 files**
 ```
 CLAUDE.md              identity.md            session.md
 LEARNINGS.md           onboard-context.md     interview-context.md
@@ -22,12 +24,73 @@ eval-checklist.md      emergency-kit.md       ai-story-builder.md
 interview-panic-room.md offer-compass.md      signal-cut.md
 AI_Ecosystem_Strategy_Course.txt
 ```
-All files are flat - select all, drag-drop into Project Knowledge.
+All flat files. Select all, drag-drop into Project Knowledge.
 
 **3. Start**
-Type `onboard` in your first session. Drop your resume or LinkedIn URL when asked. Coaching starts immediately after.
+Type `onboard` for your first session. Or just describe what's happening right now - the coach will route to the right mode automatically.
 
-That's it. No installs. No config. No CLI.
+No installs. No config. No CLI.
+
+---
+
+## What This Coach Does
+
+Five focused use cases, each at a specific painful moment, each producing something tangible.
+
+### 1. Layoff Day Emergency Kit
+Your access just got cut. You're in shock. Coach walks you through the next 72 hours without making a fear-driven decision.
+
+**Output: a written Week 1 plan before the session ends.**
+
+Say: *"I just got laid off"* or *"my access just got cut"*
+
+---
+
+### 2. AI Story Builder
+10 years of experience. Zero AI on the resume. Coach finds the AI lens in your existing work and builds 3 interview-ready stories.
+
+**Output: 3 STAR stories with AI vocabulary you can tell Monday.**
+
+Say: *"I have no AI experience on my resume"* or *"I don't know how to talk about AI"*
+
+---
+
+### 3. Interview Panic Room
+Interview in 48 hours. No prep done. Coach runs story, STAR, mock, and debrief in one session. One thing to fix. Conviction to walk in.
+
+**Output: a one-page brief - story, one fix, what you're walking in to show.**
+
+Say: *"Interview tomorrow"* or *"interview in 48 hours"*
+
+---
+
+### 4. Offer Compass
+Two offers. Deciding from fear. Coach runs IFS parts work and ACT values. Finds out which internal part is deciding - Scared or Self.
+
+**Output: a written decision made from values, not anxiety. A bad offer decision costs 18 months.**
+
+Say: *"I have two offers"* or *"should I take this offer"*
+
+---
+
+### 5. Signal Cut
+Overwhelmed by AI courses and content. Coach takes the "I need to learn X" list and runs it through signal vs. noise. Everything that doesn't affect the next interview or first 90 days gets dropped.
+
+**Output: 2-3 things that actually matter, written list, everything else explicitly dropped.**
+
+Say: *"I don't know what to learn"* or read your list out loud
+
+---
+
+## Deeper Coaching Modes
+
+For longer engagements beyond the 5 use cases:
+
+| Mode | What it covers |
+|---|---|
+| `start interview` | Full narrative arc, STAR library, AI lens, mock with debrief |
+| `start skill` | Real gap vs. imagined gap, evals thinking, ZPD learning path |
+| `start direction` | Big Tech vs. startup vs. build - IFS, ACT values, Bezos regret test |
 
 ---
 
@@ -36,15 +99,16 @@ That's it. No installs. No config. No CLI.
 ```mermaid
 flowchart TD
     A([Open project in Claude.ai]) --> B[Coach reads session.md]
-    B --> C{First session?}
-    C -->|Yes - type onboard| D[Drop resume or LinkedIn URL\nCoach reads it, makes one\nreal observation, asks 3 questions]
-    C -->|No - just start talking| E[Coach opens with:\nLast time you said X.\nWhat happened?]
-    D & E --> F[GROW session:\nGoal > Reality > Options > Way Forward]
-    F --> G[One specific commitment\nBy when. How you will know.]
-    G --> H[Coach outputs updated session.md\nCopy it back into Project Knowledge]
+    B --> C{What did you bring?}
+    C -->|First session| D[onboard: drop resume\ncoach reads it, 3 questions]
+    C -->|Specific pain moment| E[Routes to use case\nEmergency Kit / Story Builder\nPanic Room / Offer Compass / Signal Cut]
+    C -->|Returning client| F[Opens with last commitment:\nLast time you said X.\nWhat happened?]
+    D & E & F --> G[GROW session:\nGoal > Reality > Options > Way Forward]
+    G --> H[Tangible output produced\nBefore session ends]
+    H --> I[Coach outputs updated session.md\nCopy back into Project Knowledge]
 ```
 
-**After every session:** The coach outputs an updated `session.md` in the chat. Copy it and replace the file in Project Knowledge. This is the only manual step - without it, the next session starts blank.
+**After every session:** Copy the updated `session.md` the coach outputs back into Project Knowledge. This is the only manual step - without it, the next session starts blank.
 
 ---
 
@@ -53,70 +117,10 @@ flowchart TD
 `session.md` is the single source of truth. It tracks:
 - Your background, layoff context, runway, fears in your own words
 - Active mode and session count
-- Every commitment you've made - never auto-closed, always checked at next open
+- Every commitment - never auto-closed, always checked at next session open
 - Patterns observed across sessions
 
 You never repeat yourself. The coach remembers.
-
----
-
-## Commands
-
-| Command / What you say | What happens |
-|---|---|
-| `onboard` | First-time intake - drop your resume, coach reads it, 3 questions |
-| "I just got laid off" / "access just cut" | Layoff Day Emergency Kit - 72-hour plan, no fear decisions |
-| "I have no AI on my resume" | AI Story Builder - finds AI lens in existing work, 3 interview-ready stories |
-| "Interview tomorrow" / "48 hours" | Interview Panic Room - story, mock, debrief, one fix, conviction |
-| "Two offers" / "should I take it" | Offer Compass - IFS parts work, ACT values, decision from Self not Fear |
-| "Too much to learn" / reads a list | Signal Cut - 2-3 things that matter, everything else dropped in writing |
-| `start interview` | Full interview prep: narrative, STAR stories, AI lens, mock |
-| `start skill` | Skill pivot: find the real gap, close it with focused work |
-| `start direction` | Career direction: values, IFS, Bezos, reality testing |
-| `signal check` | Run current concern through signal vs noise framework |
-| `mock interview` | Simulated AI PM interview with full debrief |
-| `check commitments` | Review open commitments from last session |
-| `distill` | Surface patterns from LEARNINGS.md, promote to coaching files |
-
----
-
-## Three Modes
-
-```mermaid
-flowchart LR
-    subgraph Interview Prep
-        IP1[Layoff narrative\nno bitterness, no apology]
-        IP2[AI lens reframing\nyour PM skills in AI terms]
-        IP3[STAR stories\nwith AI PM context]
-        IP4[Mock interview\nwith real debrief]
-    end
-
-    subgraph Skill Pivot
-        SP1[Find the real gap\nnot the imagined one]
-        SP2[Evals thinking\nhighest priority]
-        SP3[Signal vs noise\nwhat to learn vs ignore]
-        SP4[ZPD + Feynman\nhow to actually learn it]
-    end
-
-    subgraph Career Direction
-        CD1[IFS parts work\nwhich part is deciding?]
-        CD2[ACT values\ntoward vs away from]
-        CD3[Reality testing\ntalk to 3 people living each path]
-        CD4[Bezos regret\ntiebreaker at 80]
-    end
-```
-
----
-
-## PM Craft Mentorship
-
-When you name a specific PM skill gap, the coach:
-1. Runs a diagnostic to find the precise gap, not the stated gap
-2. Deploys a Show Me exercise in session (doing surfaces gaps faster than asking)
-3. Assigns a specific pm-skills exercise as homework
-4. Reviews your output next session and holds you accountable
-
-Draws on Torres OST, Cagan strategy, Olsen Opportunity Score, Wodtke OKRs, JTBD, Ellis NSM, and 65 PM skills across 8 domains.
 
 ---
 
@@ -124,32 +128,35 @@ Draws on Torres OST, Cagan strategy, Olsen Opportunity Score, Wodtke OKRs, JTBD,
 
 | What you won't get | What you will get |
 |---|---|
+| Generic advice for "post-layoff PMs" | A coach at YOUR specific moment |
 | "Here are 5 strategies to bounce back" | "Tell me what happened. What are you leaving out?" |
 | "You've got this!" | "That sounds like fear talking. What do you actually want?" |
-| Reading lists | Exercises that surface your real gap |
-| Career advice | Questions that make you think clearly enough to decide yourself |
+| A reading list | A tangible output before the session ends |
 | Starting from scratch every session | A coach who remembers everything and holds you accountable |
 
 ---
 
 ## FAQ
 
+**Do I need to type a command to start?**
+No. Describe what's happening - *"my access just got cut"*, *"interview tomorrow"*, *"two offers and I'm panicking"* - and the coach routes to the right mode automatically. Only the first session needs `onboard`.
+
 **What should I bring to the first session?**
 Your resume or LinkedIn URL. The coach reads it, makes one real observation, then asks only what a document can't tell: runway, what you're scared of, what's most urgent.
 
-**What should I bring to subsequent sessions?**
+**What about subsequent sessions?**
 Nothing. Open the project and start talking. The coach reads session.md and opens with your last commitment.
 
-**What if I forget to update session.md after a session?**
-The next session starts without memory of the last one. Always copy the updated session.md the coach outputs back into Project Knowledge before closing.
+**What if I forget to update session.md?**
+The next session starts without memory. Always copy the updated session.md the coach outputs before closing.
 
 **Will this coach tell me what job to take?**
 No. It will help you think clearly enough to decide yourself.
 
 **How long until results?**
-Session 1: feel understood, not interrogated.
-Sessions 1-3: the real picture comes into focus - what is actually holding you back.
-Sessions 4-8: patterns get named, commitments get harder, progress becomes visible.
+Session 1: you leave with something tangible and feel understood, not interrogated.
+Sessions 1-3: the real picture comes into focus.
+Sessions 4-8: patterns get named, accountability compounds, progress becomes visible.
 Sessions 9+: you start coaching yourself. That is the goal.
 
 ---
@@ -177,7 +184,7 @@ bash setup.sh
 
 | Tool | Version | Purpose |
 |---|---|---|
-| Claude Code CLI | 2.1.x+ | Session file writes to disk |
+| Claude Code CLI | 2.1.x+ | Session file writes to disk automatically |
 | Node.js | v18+ | claude-eval runner |
 | npm | any | install claude-eval |
 | ANTHROPIC_API_KEY | - | eval-runner.sh + CI |
@@ -187,12 +194,13 @@ In Claude Code, `session.md` is written to disk automatically - no manual copy n
 ### Running Evals
 
 ```bash
-./eval-runner.sh --quick     # 3-prompt smoke test
+./eval-runner.sh --quick     # 3-prompt smoke test (~30 sec)
 ./eval-runner.sh             # full 10-prompt run
 ./eval-runner.sh --prompt 3  # single prompt
 ```
 
-Passing threshold: avg 4.0/5, no criterion below 3, zero em-dashes.
+Current score: 8/10. Passing threshold: avg 4.0/5, no criterion below 3, zero em-dashes.
+eval-runner.sh mocks session state before running so prompts don't trigger onboard intake.
 
 ### CI
 
@@ -209,21 +217,43 @@ Fill `eval-checklist.md` after each live session. Append row to eval log in `eva
 
 ### Drift Signals to Watch
 
+- Bullet list appearing in opening response
+- Em-dash in any response
 - Aviation analogy missing on startup-idea triggers
-- Empathy skipped in lower-stakes sessions
-- Em-dash creep in responses
+- Tangible output skipped at session close
 
-Full details in `evals.md`.
+Full rubric in `evals.md`.
 
-### Folder Structure (full)
+### Folder Structure
 
 ```
 Relaunch_PM/
-├── [17 coaching files - see Quick Start above]
-├── setup.sh                    <- maintainer: one-time local dev setup
-├── eval-runner.sh              <- maintainer: automated 10-prompt compliance check
-├── eval-checklist.md           <- maintainer: human scoring form per session
-├── evals.md                    <- maintainer: rubric, drift thresholds, eval log
-├── evals/                      <- maintainer: 10 YAML evals for CI
-└── .github/workflows/evals.yml <- maintainer: CI pipeline
+├── CLAUDE.md                    <- routing, global rules, first-session detection
+├── identity.md                  <- coach backstory and beliefs (Alex)
+├── session.md                   <- persistent client state
+├── LEARNINGS.md                 <- session log; run distill to surface patterns
+│
+├── emergency-kit.md             <- Layoff Day: 72-hour plan
+├── ai-story-builder.md          <- AI Story Builder: 3 STAR stories
+├── interview-panic-room.md      <- Interview Panic Room: 48h, one fix, conviction
+├── offer-compass.md             <- Offer Compass: IFS + ACT values decision
+├── signal-cut.md                <- Signal Cut: 2-3 things, rest dropped
+│
+├── onboard-context.md           <- session 0 intake
+├── interview-context.md         <- full interview prep mode
+├── skill-context.md             <- skill pivot mode
+├── direction-context.md         <- career direction mode
+├── ai-ecosystem.md              <- aviation analogy, AI career layers
+├── coaching-moves.md            <- empathy, reframes, stories, quotes
+├── study-mate.md                <- memory + diagnosis + adaptation model
+├── signal-vs-noise.md           <- what to learn vs ignore
+├── icf-ethics.md                <- ICF ethics in practice
+├── pm-skills-context.md         <- PM craft mentorship: 8 skill areas
+│
+├── setup.sh                     <- maintainer: one-time local dev setup
+├── eval-runner.sh               <- maintainer: 10-prompt binary compliance check
+├── eval-checklist.md            <- maintainer: human scoring form
+├── evals.md                     <- maintainer: rubric, drift thresholds, eval log
+├── evals/                       <- maintainer: 10 YAML evals for CI
+└── .github/workflows/evals.yml  <- maintainer: CI pipeline
 ```
